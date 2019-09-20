@@ -1,0 +1,42 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1939.8.14.12
+		picture = "GFX_select_date_1939"
+		default_country = "ARS"
+		default = yes
+		
+				"ARS"={
+			#history = "USA_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				ARS_war_with_kolechia
+			}
+			#focuses = {
+			#	USA_war_plan_black
+			#	USA_strike_at_the_empire
+			#	USA_pearl_harbor_gambit
+			#}
+		}
+		"KOL"={
+			#history = "USA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				KOL_war_with_Arstotzka
+			}
+			#focuses = {
+			#	USA_war_plan_black
+			#	USA_strike_at_the_empire
+			#	USA_pearl_harbor_gambit
+			#}
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

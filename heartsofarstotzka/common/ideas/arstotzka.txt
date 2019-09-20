@@ -1,0 +1,962 @@
+ideas = {
+
+	country = {
+			ARS_war_with_kolechia = {
+				
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				#rule = {
+					#can_create_factions = yes
+				#}
+
+				modifier = {
+					drift_defence_factor = 0.1
+					join_faction_tension = 0.5
+					army_org_factor = 0.05
+					stability_factor = 0.05
+					production_speed_buildings_factor = -0.05
+					research_time_factor = -0.02
+				}
+			}
+			ARS_kolechia_vanquished = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = ARS_war_with_kolechia
+				
+				modifier = {
+					war_support_factor = -0.1
+					army_org_factor = 0.1
+					production_speed_buildings_factor = 0.1
+					research_time_factor = -0.05
+				}
+			}		
+			ARS_occupation_instability = {
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				picture = generic_communism_drift_bonus
+
+				modifier = {
+					stability_factor = -0.2
+					war_support_factor = -0.2
+					conscription = -0.1
+					conscription_factor = -0.5
+					foreign_subversive_activites = 1.0
+					enemy_partisan_effect = 1.0
+					drift_defence_factor = -1.0
+					political_power_gain = -1.0
+					research_time_factor = 0.15
+					industrial_capacity_factory = -0.2
+					industrial_capacity_dockyard = -0.2
+					local_resources_factor = -0.25
+					consumer_goods_factor = 0.1
+				}
+			}
+			ARS_entrenched_occupation = {
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				picture = generic_communism_drift_bonus
+
+				modifier = {
+					stability_factor = -0.1
+					war_support = -0.1
+					conscription = -0.05
+					conscription_factor = -0.25
+					foreign_subversive_activites = 0.5
+					enemy_partisan_effect = 0.5
+					drift_defence_factor = -0.75
+					political_power_gain = -1.0
+					research_time_factor = 0.1
+					industrial_capacity_factory = -0.1
+					industrial_capacity_dockyard = -0.1
+					local_resources_factor = -0.1
+					consumer_goods_factor = 0.05
+				}
+			}
+			ARS_accepted_occupation = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_communism_drift_bonus
+				
+				modifier = {
+					foreign_subversive_activites = 0.25
+					enemy_partisan_effect = 0.25
+					drift_defence_factor = -0.25
+					consumer_goods_factor = -0.05
+					MONTHLY_POPULATION = 0.05
+				}
+			}
+			ARS_arstotzkan_glory = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = trotskyite_plot_purged
+				
+				modifier = {
+					stability_factor = 0.05
+					war_support_factor = 0.05
+					political_power_gain = 1.0
+				}
+			}
+			ARS_state_media = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_army_war_college
+				
+				modifier = {
+					stability_factor = 0.1
+					war_support_factor = 0.1
+					political_power_gain = 0.5
+					fascism_drift = 0.02
+				}
+			}
+			ARS_arstotzkan_devotion = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_victors_of_ww1
+
+				modifier = {
+					conscription = 0.05
+					conscription_factor = 0.25
+					research_time_factor = 0.10
+					industrial_capacity_factory = -0.2
+					industrial_capacity_dockyard = -0.2
+					local_resources_factor = -0.2
+					consumer_goods_factor = 0.1
+				}
+			}
+			ARS_police_commandos = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_intel_bonus
+				
+				modifier = {
+					foreign_subversive_activites = -0.75
+						sub_units = {
+							military_police = {
+								cost = 0.25
+								training_time = -1.0
+								soft_attack = 0.5
+								defense = 0.5
+								supply_use = 1.0
+								equipment = 1.0
+							}
+						}
+				}
+			}		
+			ARS_arstotzkan_union = {
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				picture = trotskyite_plot
+
+				modifier = {
+					war_support_factor = 0.1
+					political_power_gain = 0.5
+					enemy_partisan_effect = 0.25
+					foreign_subversive_activites = 0.25
+				}
+			}
+			ARS_arstotzkan_youth = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = no
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_manpower_bonus
+				
+				modifier = {
+					conscription = 0.05
+					stability_factor = -0.1
+					war_support_factor = 0.1
+					training_time_factor = 0.1
+				}
+			}
+			ARS_arstotzkan_zampolit = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = nkvd_2
+				
+				modifier = {
+					army_morale_factor = 0.05
+					army_org_Factor = 0.05
+					attrition = -0.05
+					stability_factor = -0.05
+					war_support_factor = -0.05
+				}
+			}
+			ARS_kolechian_agitators_discovered = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = anti_soviet_pact
+				
+				modifier = {
+					stability_factor = -0.25
+					war_support_factor = 0.1
+				}
+			}
+			ARS_cobrastan_question = {
+			
+				allowed = {
+					always = no
+				}
+			
+				allowed_civil_war = {
+					always = yes
+				}
+			
+				removal_cost = -1
+			
+				picture = FRA_matignon_agreements
+				
+				modifier = {
+					stability_factor = -0.05
+					conscription = -0.05
+					conscription_factor = -0.1
+				}
+			}
+			ARS_cobrastan_natives_protest = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = anti_soviet_pact
+				
+				modifier = {
+					stability_factor = -0.05
+					war_support_factor = -0.05
+					conscription = -0.05
+					conscription_factor = - 0.1
+					industrial_capacity_factory = -0.05
+					industrial_capacity_dockyard = -0.05
+					democratic_drift = 0.1
+				}
+			}
+			ARS_glory_of_old1 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_morale_bonus
+				
+				modifier = {
+					neutrality_drift = 0.1
+					stability_factor = -0.1
+					war_support_factor = -0.1
+					drift_defence_factor = -0.25
+				}
+			}
+			ARS_glory_of_old2 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_morale_bonus
+				
+				modifier = {
+					neutrality_drift = 0.25
+					stability_factor = -0.2
+					war_support_factor = -0.3
+					drift_defence_factor = -0.5
+					conscription = -0.1
+					conscription_factor = -0.25
+					consumer_goods_factor = 0.1
+				}
+			}
+			ARS_glory_of_old3 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_morale_bonus
+				
+				modifier = {
+					neutrality_drift = 0.1
+					stability_factor = 0.1
+					political_power_gain = 1.0
+					consumer_goods_factor = 0.1
+				}
+			}
+			ARS_glory_of_old4 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_morale_bonus
+				
+				modifier = {
+					neutrality_drift = 0.1
+					stability_factor = 0.1
+					political_power_gain = 1.0
+					consumer_goods_factor = 0.1
+					drift_defence_factor = 0.25
+					trade_opinion_factor = 0.25
+					opinion_gain_monthly_factor = 0.15
+				}
+			}
+			ARS_ezic_rises1 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_morale_bonus
+				
+				modifier = {
+					democratic_drift = 0.25
+					political_power_gain = -0.5
+					stability_factor = -0.1
+					war_support_factor = -0.1
+					conscription = -0.05
+					conscription_factor = -0.1
+					drift_defence_factor = -0.5
+					trade_opinion_factor = 0.25
+				}
+			}
+			ARS_ezic_rises2 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_morale_bonus
+				
+				modifier = {
+					democratic_drift = 0.25
+					political_power_gain = -1.0
+					stability_factor = -0.2
+					war_support_factor = -0.25
+					conscription = -0.25
+					conscription_factor = -0.5
+					drift_defence_factor = -1.0
+					trade_opinion_factor = 0.25
+					
+				}
+			}
+			ARS_ezic_triumphant = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_morale_bonus
+				
+				modifier = {
+					democratic_drift = 0.1
+					stability_factor = 0.1
+					political_power_gain = 0.5
+					drift_defence_factor = 0.5
+					trade_opinion_factor = 0.25
+					consumer_goods_factor = -0.05
+				}
+			}
+			ARS_war_preparations = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_reserve_divisions
+				
+				modifier = {
+					training_time_factor = -0.1
+					division_attrition_factor = -0.05
+				}
+			}
+			ARS_arstotzkan_revenge = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = officers_purged
+				
+				modifier = {
+					stability_weekly = 0.01
+					political_power_gain = 1.0
+					army_attack_factor = 0.1
+					army_defense_factor = 0.1
+					division_recovery_factor = 0.1
+				}
+			}
+			ARS_state_education1 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_research_bonus
+				
+				modifier = {
+					research_time_factor = -0.05
+					stability_factor = 0.05
+				}
+			}
+			ARS_state_education2 = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = FRA_factory_strikes
+				
+				research_bonus = {
+					computing_tech = 0.1
+					industry = 0.1
+					synth_resources = 0.1
+				}
+			}
+			ARS_state_education3 = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_production_bonus
+				
+				modifier = {
+					industrial_capacity_factory = 0.1
+					industrial_capacity_dockyard = 0.1
+					production_speed_buildings_factor = 0.1
+					consumer_goods_factor = -0.05
+				}
+			}
+			ARS_patriotic_workers = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = ast_all_in
+
+				modifier = {
+					global_building_slots_factor = 0.1
+					production_speed_arms_factory_factor = 0.05
+					production_speed_industrial_complex_factor = 0.05
+					production_factory_max_efficiency_factor = 0.1
+					production_factory_efficiency_gain_factor = 0.1
+				}
+			}
+			ARS_the_truth_of_arstotzka = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_disjointed_gov
+				
+				modifier = {
+					justify_war_goal_time = -0.25
+					generate_wargoal_tension = -0.25
+				}
+			}
+			ARS_ezic_star = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_democratic_drift_bonus
+				
+				modifier = {
+					fascism_drift = -0.01
+					communism_drift = -0.01
+					stability_factor = -0.1
+					war_support_factor = -0.1
+				}
+			}
+			ARS_illegal_immigration = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = tfv_can_conscription_crisis
+				
+				modifier = {
+					stability_factor = -0.15
+					war_support_factor = -0.05
+					drift_defence_factor = -0.25
+					foreign_subversive_activites = 0.25
+					enemy_partisan_effect = 0.25
+					consumer_goods_factor = 0.05
+				}
+			}
+			ARS_papers_please = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_oppression
+				
+				modifier = {
+					stability_factor = -0.1
+					war_support_factor = -0.05
+					drift_defence_factor = -0.25
+					foreign_subversive_activites = 0.25
+					enemy_partisan_effect = 0.25
+					conscription = 0.01
+					conscription_factor = 0.05
+				}
+			}
+			ARS_improved_papers_please = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_oppression
+				
+				modifier = {
+					stability_factor = -0.1
+					war_support_factor = -0.05
+					drift_defence_factor = -0.5
+					foreign_subversive_activites = 0.5
+					enemy_partisan_effect = 0.5
+				}
+			}
+			ARS_immigration_amnesty = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_democratic_drift_bonus
+				
+				modifier = {
+					conscription = 0.02
+					conscription_factor = 0.10
+					consumer_goods_factor = 0.10
+				}
+			}
+			ARS_cobrastani_dissent = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = tfv_can_conscription_crisis
+				
+				modifier = {
+					conscription = -0.05
+					conscription_factor = -0.25
+					MONTHLY_POPULATION = -1.0
+				}
+			}
+	}
+			political_advisor = {
+
+				ARS_boris_berman = {
+
+					picture = generic_political_advisor_europe_1
+
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { prince_of_terror }
+				}
+
+				ARS_jozeph_ryzhykov = {
+
+					picture = generic_political_advisor_europe_2
+						
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { captain_of_industry }
+				}
+					
+				ARS_mikail_kanevsky = {
+				
+					picture = generic_political_advisor_europe_1
+					
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { staunch_monarchist }
+				}
+			}
+
+			army_chief = {
+
+				ARS_vasily_sokolovsky = {
+
+					picture = generic_army_europe_1
+					
+					allowed = {
+						original_tag = ARS
+					}		
+					
+					traits = { army_chief_offensive_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+
+				ARS_ivan_yakubovsky = {
+
+					picture = generic_army_europe_4
+					
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { army_chief_defensive_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+			}
+
+			air_chief = {
+
+				ARS_ivan_pstygo = {
+
+					picture = generic_air_europe_3
+					
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { air_chief_reform_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+
+				ARS_fedor_dobysh = {
+
+					picture = generic_air_europe_1
+					
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { air_chief_ground_support_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+
+			}
+
+			navy_chief = {
+
+				ARS_valentin_drozd = {
+
+					picture = generic_navy_europe_2
+					
+					allowed = {
+						original_tag = ARS
+					}
+							
+					traits = { navy_chief_commerce_raiding_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+
+				ARS_georgy_holostyakov = {
+
+					picture = generic_navy_europe_3
+					
+					allowed = {
+						original_tag = ARS
+					}
+							
+					traits = { navy_chief_maneuver_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+			}
+
+			high_command = {
+
+				ARS_piotr_kozlov = {
+					
+					picture = generic_army_europe_5
+					
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { army_regrouping_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+				
+				ARS_alexander_akulich = {
+
+					picture = generic_army_europe_2
+					
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { army_infantry_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+
+				ARS_maksim_antonyuk = {
+
+					picture = generic_army_europe_3
+					
+					allowed = {
+						original_tag = ARS
+					}
+					
+					traits = { army_armored_2 }
+					
+					ai_will_do = {
+						factor = 1
+					}
+				}
+			}	
+
+			theorist = {
+				ARS_aleksei_antonov = {
+					
+					picture = generic_army_europe_2
+
+					allowed = {
+						original_tag = ARS
+					}
+					
+					research_bonus = {
+						land_doctrine = 0.07
+					}
+					
+					traits = { military_theorist }
+				}	
+
+				ARS_stepan_krasovsky = {
+
+					picture = generic_air_europe_1
+					
+					allowed = {
+						original_tag = ARS
+					}
+					
+					research_bonus = {
+						air_doctrine = 0.07
+					}
+					
+					traits = { air_warfare_theorist }
+				}
+
+			}
+	}
+}

@@ -1,0 +1,233 @@
+ideas = {
+
+	country = {
+		KOL_war_with_Arstotzka = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.5
+			}
+
+			modifier = {
+				subversive_activites_upkeep = -0.5
+				stability_factor = -0.10
+				conscription = -0.009
+			}
+		}
+		}
+
+	political_advisor = {
+
+		KOL_boris_berman = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = KOL
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		KOL_jozeph_ryzhykov = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = KOL
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+
+	army_chief = {
+
+		KOL_vasily_sokolovsky = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = KOL
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KOL_ivan_yakubovsky = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = KOL
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		KOL_ivan_pstygo = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = KOL
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KOL_fedor_dobysh = {
+
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = KOL
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		KOL_valentin_drozd = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = KOL
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KOL_georgy_holostyakov = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = KOL
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		KOL_piotr_kozlov = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = KOL
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		KOL_alexander_akulich = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = KOL
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		KOL_maksim_antonyuk = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = KOL
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		KOL_aleksei_antonov = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = KOL
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}	
+
+		KOL_stepan_krasovsky = {
+
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = KOL
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

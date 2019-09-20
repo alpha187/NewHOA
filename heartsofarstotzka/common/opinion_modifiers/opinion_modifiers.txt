@@ -1,0 +1,25 @@
+opinion_modifiers = {
+
+###------> ARS <><> <><> <><> <><> <><>
+
+	ARS_arstotzkan_bastion = { value = 25 }
+
+	ARS_arstotzkan_nationalists = { value = 50 }
+
+	ARS_arstotzkan_communists = { value = 50 }
+
+	ARS_cobrastani_freedom = { value = 100 }
+
+	ARS_eastern_facists = { value = 100 }
+
+	ARS_cobrastan_protest = { value = -25 }
+
+	ARS_doorstep_threat = { value = -25 }
+
+	ARS_police_crackdowns = { value = -50 }
+
+	ARS_border_madness = { value = -75 }
+
+	ARS_arstotzkan_provocation = { value = -100 }
+
+	ARS_arstotzkan_expansionism = { value = -100 }

@@ -1,0 +1,208 @@
+ideas = {
+
+	political_advisor = {
+
+		ANT_boris_berman = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = ANT
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		ANT_jozeph_ryzhykov = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = ANT
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+
+	army_chief = {
+
+		ANT_vasily_sokolovsky = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = ANT
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ANT_ivan_yakubovsky = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = ANT
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		ANT_ivan_pstygo = {
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = ANT
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ANT_fedor_dobysh = {
+
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = ANT
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		ANT_valentin_drozd = {
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = ANT
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ANT_georgy_holostyakov = {
+
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ANT
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		ANT_piotr_kozlov = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = ANT
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ANT_alexander_akulich = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = ANT
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ANT_maksim_antonyuk = {
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = ANT
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		ANT_aleksei_antonov = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = ANT
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}	
+
+		ANT_stepan_krasovsky = {
+
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = ANT
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}
