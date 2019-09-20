@@ -1,0 +1,38 @@
+
+state={
+	id=218
+	name="STATE_218"
+	manpower = 2041076
+	
+	state_category = city
+
+	resources={
+		oil=18
+	}
+
+	history={
+		owner = ARS
+		victory_points = {
+			9417 15 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 3
+			9417 ={
+				naval_base = 5
+			}
+		}
+		add_core_of = ARS
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
+		}
+	}
+
+	provinces={
+		585 6445 9417 9430 11418 11434 11450 11559 
+	}
+}

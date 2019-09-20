@@ -1,0 +1,133 @@
+capital = 224
+
+oob = "ANT_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+	set_convoys = 0
+	set_stability = 0.65
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 43
+		}
+
+		fascism = {
+			popularity = 32
+		}
+		
+		communism = {
+			popularity = 15
+		}
+
+		neutrality = {
+			popularity = 10
+		}
+	}
+
+	ruling_party = fascism
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no	
+}
+add_ideas = {
+}
+
+create_country_leader = {
+	name = "Artem Kostenko"
+	desc = ""
+	picture = "other.tga"
+	expire = "1953.3.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+	}
+}
+
+create_country_leader = {
+	name = "Andriy Burluk"
+	desc = ""
+	picture = "other.tga"
+	expire = "1953.3.1"
+	ideology = anti_revisionism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Roman Durowski"
+	desc = ""
+	picture = "main.tga"
+	expire = "1953.3.1"
+	ideology = rexism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Pesk"
+	desc = ""
+	picture = "other.tga"
+	expire = "1953.3.1"
+	ideology = oligarchism
+	traits = {
+		dictator
+	}
+}
+
+create_corps_commander = {
+	name = "Nikolai Fedivich"
+	portrait_path = "gfx\leaders\ANT\ANT2.tga"
+	skill = 3
+}
+
+
+create_corps_commander = {
+	name = "Stanislav Vasiliev"
+	portrait_path = "gfx\leaders\ANT\ANT1.tga"
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Yusuf Mikhailov"
+	portrait_path = "gfx\leaders\ANT\ANT3.tga"
+	skill = 3
+}
+

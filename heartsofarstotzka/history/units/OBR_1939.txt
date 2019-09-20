@@ -1,0 +1,139 @@
+division_template = {
+	name = "Infantry Division"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	}
+	division_template = {
+	name = "Obris Motorized Division"		
+											
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {	
+		engineer = { x = 0 y = 1 } 		
+	}
+	}
+	division_template = {
+	name = "Obris Armoured Divison"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+	units = {
+	division= {	
+		name = "Infantry Division"
+		location = 6380 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		name = "Infantry Division"
+		location = 6380 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		name = "Infantry Division"
+		location = 6380 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		name = "Infantry Division"
+		location = 6380 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		name = "Infantry Division"
+		location = 11241	 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		name = "Infantry Division"
+		location = 11241 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		name = "Infantry Division"
+		location = 11241 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		name = "Infantry Division"
+		location = 11241	 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+	}
+	division= {	
+		name = "Obris Motorized Division"
+		location = 9359						
+		division_template = "Obris Motorized Division"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "Obris Motorized Division"
+		location = 9359						
+		division_template = "Obris Motorized Division"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "Obris Motorized Division"
+		location = 9359
+		division_template = "Obris Motorized Division"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "Obris Motorized Division"
+		location = 9359
+		division_template = "Obris Motorized Division"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "Obris Armoured Divison"
+		location = 11284			#
+		division_template = "Obris Armoured Divison"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "Obris Armoured Divison"
+		location = 11284
+		division_template = "Obris Armoured Divison"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "Obris Armoured Divison"
+		location = 11284
+		division_template = "Obris Armoured Divison"
+		start_experience_factor = 0.4
+	}
+	}

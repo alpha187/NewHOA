@@ -1,0 +1,58 @@
+	division_template = {
+	name = "Republian Conscripts"		
+											
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {	
+		#engineer = { x = 0 y = 1 } 		
+	}
+	}
+		units = {
+	division= {	
+		name = "Republian Conscripts"
+		location = 546 
+		division_template = "Republian Conscripts"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Republian Conscripts"
+		location = 546 
+		division_template = "Republian Conscripts"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Republian Conscripts"
+		location = 9437 
+		division_template = "Republian Conscripts"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Republian Conscripts"
+		location = 9437 
+		division_template = "Republian Conscripts"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Republian Conscripts"
+		location = 525 
+		division_template = "Republian Conscripts"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Republian Conscripts"
+		location = 525 
+		division_template = "Republian Conscripts"
+		start_experience_factor = 0.3
+	}
+	}

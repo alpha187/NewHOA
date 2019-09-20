@@ -1,0 +1,156 @@
+division_template = {
+	name = "United Infantry"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	}
+	division_template = {
+	name = "United Armour Division"				
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }		
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+			recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "United Motorised Divsion" 	
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }		
+	}
+}
+
+units = {
+	division= {	
+		name = "United Infantry"
+		location = 11670 
+		division_template = "United Infantry"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Infantry"
+		location = 11670 
+		division_template = "United Infantry"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Infantry"
+		location = 11670 
+		division_template = "United Infantry"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Infantry"
+		location = 11670 
+		division_template = "United Infantry"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Infantry"
+		location = 3724	 
+		division_template = "United Infantry"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Infantry"
+		location = 3724 
+		division_template = "United Infantry"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Infantry"
+		location = 6480 
+		division_template = "United Infantry"   
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Armour Division"
+		location = 3457	 
+		division_template = "United Armour Division"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Armour Division"
+		location = 3457
+		division_template = "United Armour Division"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Armour Division"
+		location = 11479
+		division_template = "United Armour Division"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Armour Division"
+		location = 11479 
+		division_template = "United Armour Division"        
+		start_experience_factor = 0.2
+	}                                                            #4
+	division= {	
+		name = "United Infantry"
+		location = 11441 
+		division_template = "United Infantry"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Infantry"
+		location = 3412 
+		division_template = "United Infantry"
+		start_experience_factor = 0.2
+	}                                                                      #2here
+	division= {	
+		name = "United Motorised Divsion"
+		location = 6520 
+		division_template = "United Motorised Divsion"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Motorised Divsion"
+		location = 11543 
+		division_template = "United Motorised Divsion"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Motorised Divsion"
+		location = 3511 
+		division_template = "United Motorised Divsion"
+		start_experience_factor = 0.2
+	}
+	division= {	
+		name = "United Motorised Divsion"
+		location = 6429 
+		division_template = "United Motorised Divsion"
+		start_experience_factor = 0.2
+	}
+	}
