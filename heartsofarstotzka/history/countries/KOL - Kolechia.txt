@@ -41,36 +41,28 @@ set_technology = {
 
 add_ideas = {
 		KOL_war_with_Arstotzka
+		free_trade
 	}
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 20
-		}
-
-		fascism = {
-			popularity = 10
-		}
-		
-		communism = {
-			popularity = 15
-		}
-
-		neutrality = {
-			popularity = 55
-		}
-	}
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes	
+}
+parties = {
+	democratic = 20
+	fascism = 10
+	communism = 15
+	neutrality = 55
+}
 
 	ruling_party = neutrality
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes	
 }
-add_ideas = {
-	free_trade
-}
+
 create_country_leader = {
 	name = "Sasha Stepanova"
 	desc = ""
