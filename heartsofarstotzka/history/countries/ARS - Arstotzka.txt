@@ -45,30 +45,18 @@ set_technology = {
 	}
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 5
-		}
-
-		fascism = {
-			popularity = 18
-		}
-		
-		communism = {
-			popularity = 67
-		}
-
-		neutrality = {
-			popularity = 10
-		}
-	}
-
 	ruling_party = communism
 	last_election = "1935.11.14"
 	election_frequency = 48
-	elections_allowed = no	
+	elections_allowed = no
 }
+parties = {
+	democratic = 5
+	fascism = 18
+	communism = 67
+	neutrality = 10
+}
+
 add_ideas = {
 }
 
