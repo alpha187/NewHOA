@@ -40,10 +40,6 @@ set_technology = {
 	set_convoys = 50
 	set_stability = 0.75
 
-	add_ideas = {
-		ARS_war_with_kolechia
-	}
-
 set_politics = {
 	ruling_party = communism
 	last_election = "1935.11.14"
@@ -57,8 +53,9 @@ parties = {
 	neutrality = 10
 }
 
-add_ideas = {
-}
+	add_ideas = {
+		ARS_war_with_kolechia
+	}
 
 create_country_leader = {
 	name = "Sergei Vladovich"
