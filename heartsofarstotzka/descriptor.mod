@@ -7,4 +7,4 @@ tags={
 	"National Focuses"
 }
 remote_file_id="883820486"
-supported_version="1.5.*"
+supported_version="1.7.*"
