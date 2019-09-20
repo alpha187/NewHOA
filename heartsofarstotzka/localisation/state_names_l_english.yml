@@ -198,6 +198,7 @@ l_english:
  STATE_197:0 "Tsunkeido"  #
  STATE_198:0 "Vinnytsia"
  STATE_199:0 "Khmel"
+ STATE_200:0 "Southern Kolechia"  #
  STATE_201:0 "West Republia"  #
  STATE_202:0 "Lesrenadi"  #
  STATE_203:0 "Enkyo"  #
@@ -785,4 +786,3 @@ l_english:
  STATE_785:0 "Picardy"
  STATE_786:0 "Mauritanian Desert"
  STATE_787:0 "Northern Kashmir"
- STATE_200:0 "Southern Kolechia"  #
