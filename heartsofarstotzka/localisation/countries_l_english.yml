@@ -1,4 +1,4 @@
-l_english:
+1_english:
  GER_fascism:0 "German Reich"
  GER_fascism_DEF:0 "the German Reich"
  GER_democratic:0 "German Republic"
@@ -2206,7 +2206,7 @@ l_english:
  NIR_democratic_ADJ:0 "Northern Irish"
  NIR_neutrality_ADJ:1 "Ulster"
  NIR_communism_ADJ:1 "North Irish"
- #############################
+#############################
  ARS_communism:0 "Arstotzka"
  ARS_neutrality:0 "Kingdom of Arstotzka"
  ARS_fascism:0 "Arstotzkan Empire"
@@ -2215,7 +2215,7 @@ l_english:
  ARS_democratic_ADJ:0 "Arstotzkan"
  ARS_neutrality_ADJ:0 "Arstotzkan"
  ARS_communism_ADJ:0 "Arstotzkan"
- #############################
+#############################
  KOL_communism:0 "People's Republic of Kolechia"
  KOL_neutrality:0 "Kolechia"
  KOL_fascism:0 "Kolechian Empire"
@@ -2224,7 +2224,7 @@ l_english:
  KOL_democratic_ADJ:0 "Kolechian"
  KOL_neutrality_ADJ:0 "Kolechian"
  KOL_communism_ADJ:0 "Kolechian"
- ##############################
+##############################
  IMP_communism:0 "Socialist Republic of Impor"
  IMP_neutrality:0 "Impor"
  IMP_fascism:0 "Impor Imperium"
@@ -2242,7 +2242,7 @@ l_english:
  REP_democratic_ADJ:0 "Republian"
  REP_neutrality_ADJ:0 "Republian"
  REP_communism_ADJ:0 "Republian"
- #############################
+#############################
  ANT_communism:0 "Socialist Republic of Antegria"
  ANT_neutrality:0 "Antegrian Empire"
  ANT_fascism:0 "Antegria"
@@ -2251,7 +2251,7 @@ l_english:
  ANT_democratic_ADJ:0 "Antegrian"
  ANT_neutrality_ADJ:0 "Antegrian"
  ANT_communism_ADJ:0 "Antegrian"
- #############################
+#############################
  UNF_communism:0 "United Union"
  UNF_neutrality:0 "United Monarchy"
  UNF_fascism:0 "United Empire"
@@ -2260,7 +2260,7 @@ l_english:
  UNF_democratic_ADJ:0 "Federals"
  UNF_neutrality_ADJ:0 "Federals"
  UNF_communism_ADJ:0 "Federals"
- #############################
+#############################
  COB_communism:0 "Union of Cobrastan"
  COB_neutrality:0 "Cobrastan"
  COB_fascism:0 "Cobrareich"
@@ -2269,7 +2269,7 @@ l_english:
  COB_democratic_ADJ:0 "Cobrastani"
  COB_neutrality_ADJ:0 "Cobrastani"
  COB_communism_ADJ:0 "Cobrastani"
- #############################
+#############################
  OBR_communism:0 "Obristan Socialist Republic"
  OBR_neutrality:0 "Obristan"
  OBR_fascism:0 "Empire of Obristan"
