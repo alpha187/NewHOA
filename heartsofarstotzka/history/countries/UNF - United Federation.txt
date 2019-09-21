@@ -46,6 +46,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes	
 }
+
 set_popularities = {
 	democratic = 73
 	fascism = 17
