@@ -2251,7 +2251,7 @@ l_english:
  ANT_democratic_ADJ:0 "Antegrian"
  ANT_neutrality_ADJ:0 "Antegrian"
  ANT_communism_ADJ:0 "Antegrian"
-  #############################
+ #############################
  UNF_communism:0 "United Union"
  UNF_neutrality:0 "United Monarchy"
  UNF_fascism:0 "United Empire"
@@ -2260,7 +2260,7 @@ l_english:
  UNF_democratic_ADJ:0 "Federals"
  UNF_neutrality_ADJ:0 "Federals"
  UNF_communism_ADJ:0 "Federals"
-   #############################
+ #############################
  COB_communism:0 "Union of Cobrastan"
  COB_neutrality:0 "Cobrastan"
  COB_fascism:0 "Cobrareich"
@@ -2269,7 +2269,7 @@ l_english:
  COB_democratic_ADJ:0 "Cobrastani"
  COB_neutrality_ADJ:0 "Cobrastani"
  COB_communism_ADJ:0 "Cobrastani"
-    #############################
+ #############################
  OBR_communism:0 "Obristan Socialist Republic"
  OBR_neutrality:0 "Obristan"
  OBR_fascism:0 "Empire of Obristan"
