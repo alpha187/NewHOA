@@ -22,6 +22,7 @@ state={
 		}
 		add_core_of = REP
 		add_core_of = ANT
+		add_core_of = UKR
 	}
 
 	provinces={

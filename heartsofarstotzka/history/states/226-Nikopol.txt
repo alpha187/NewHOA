@@ -25,6 +25,7 @@ state={
 			arms_factory = 3	
 		}
 		add_core_of = KOL
+		add_core_of = UKR
 	}
 
 	provinces={

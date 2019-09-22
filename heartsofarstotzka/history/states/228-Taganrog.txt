@@ -21,6 +21,7 @@ state={
 		}
 		add_core_of = ARS
 		add_core_of = KOL
+		add_core_of = UKR
 	}
 
 	provinces={

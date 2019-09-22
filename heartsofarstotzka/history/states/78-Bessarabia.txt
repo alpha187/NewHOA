@@ -22,6 +22,7 @@ state=
 			}
 		}
 		add_core_of = UNF
+		add_core_of = MOL
 	}
 	provinces=
 	{

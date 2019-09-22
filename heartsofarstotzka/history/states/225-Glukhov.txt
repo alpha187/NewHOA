@@ -12,6 +12,7 @@ state={
 			infrastructure = 5
 		}
 		add_core_of = KOL
+		add_core_of = UKR
 	}
 
 	provinces={

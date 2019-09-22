@@ -12,6 +12,7 @@ state={
 			3392 1 
 		}
 		add_core_of = UNF
+		add_core_of = BLR
 	}
 
 	provinces={
