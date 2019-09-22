@@ -1,4 +1,4 @@
-	division_template = {
+﻿	division_template = {
 	name = "Republian Conscripts"		
 											
 	regiments = {
@@ -56,3 +56,27 @@
 		start_experience_factor = 0.3
 	}
 	}
+
+instant_effect = {
+
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "REP"
+		}
+		requested_factories = 3
+		progress = 0
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "REP" 
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 50
+	}
+}

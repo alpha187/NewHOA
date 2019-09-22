@@ -1,4 +1,4 @@
-division_template = {
+﻿division_template = {
 	name = "Kolechian Infantry"		
 
 	regiments = {
@@ -110,6 +110,40 @@ division_template = {
 		start_experience_factor = 0.3
 	}
 	}
+
+instant_effect = {
+
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "KOL" 
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "KOL" 
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "KOL" 
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 50
+	}
+}
 
 
 # this is Alpha187. this is my watermark ensuring no one steals my mod and gets away with it.
