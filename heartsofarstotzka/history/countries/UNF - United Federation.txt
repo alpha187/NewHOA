@@ -1,4 +1,4 @@
-capital = 91
+﻿capital = 91
 
 oob = "UNF_1936"
 
@@ -103,12 +103,12 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Christopher Hess"
-	portrait_path = "gfx\leaders\UNF\UNF1.tga"
+	portrait_path = "gfx\\leaders\\UNF\\UNF1.tga"
 	skill = 4
 }
 create_corps_commander = {
 	name = "Joseph Ryder"
-	portrait_path = "gfx\leaders\UNF\UNF2.tga"
+	portrait_path = "gfx\\leaders\\UNF\\UNF2.tga"
 	skill = 2
 }
 

@@ -106,26 +106,26 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Vonel"
-	portrait_path = "gfx\leaders\ARS\ARS1.tga"
+	portrait_path = "gfx\\leaders\\ARS\\ARS1.tga"
 	skill = 3
 }
 
 create_corps_commander = {
 	name = "Dimitri"
-	portrait_path = "gfx\leaders\ARS\ARS3.tga"
+	portrait_path = "gfx\\leaders\\ARS\\ARS3.tga"
 	skill = 3
 }
 
 
 create_corps_commander = {
 	name = "Sergiu Volda"
-	portrait_path = "gfx\leaders\ARS\ARS4.tga"
+	portrait_path = "gfx\\leaders\\ARS\\ARS4.tga"
 	skill = 3
 }
 
 create_corps_commander = {
 	name = "Calensk"
-	portrait_path = "gfx\leaders\ARS\ARS2.tga"
+	portrait_path = "gfx\\leaders\\ARS\\ARS2.tga"
 	traits = { old_guard }
 	skill = 3
 }

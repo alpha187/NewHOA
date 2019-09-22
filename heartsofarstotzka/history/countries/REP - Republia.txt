@@ -1,4 +1,4 @@
-capital = 202
+﻿capital = 202
 
 oob = "REP_1936"
 
@@ -100,33 +100,33 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Boris Bostsav"
-	portrait_path = "gfx\leaders\REP\Rep1.tga"
+	portrait_path = "gfx\\leaders\\REP\\Rep1.tga"
 	traits = { winter_specialist }
 	skill = 4
 }
 
 create_corps_commander = {
 	name = "Ivan Ivanov"
-	portrait_path = "gfx\leaders\REP\Rep2.tga"
+	portrait_path = "gfx\\leaders\\REP\\Rep2.tga"
 	traits = { winter_specialist }
 	skill = 4
 }
 
 create_corps_commander = {
 	name = "Mikael Tengelin"
-	portrait_path = "gfx\leaders\REP\mikael.tga"
+	portrait_path = "gfx\\leaders\\REP\\mikael.tga"
 	skill = 2
 }
 
 
 create_corps_commander = {
 	name = "Sergiu Pyorl"
-	portrait_path = "gfx\leaders\REP\Pyorl.tga"
+	portrait_path = "gfx\\leaders\\REP\\Pyorl.tga"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Belinski"
-	portrait_path = "gfx\leaders\REP\Belinski.tga"
+	portrait_path = "gfx\\leaders\\REP\\Belinski.tga"
 	skill = 1
 }

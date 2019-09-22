@@ -103,25 +103,25 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Pytor"
-	portrait_path = "gfx\leaders\KOL\Kol1.tga"
+	portrait_path = "gfx\\leaders\\KOL\\Kol1.tga"
 	skill = 4
 }
 
 create_corps_commander = {
 	name = "Feliks Popov"
-	portrait_path = "gfx\leaders\KOL\Kol2.tga"
+	portrait_path = "gfx\\leaders\\KOL\\Kol2.tga"
 	skill = 3
 }
 
 create_corps_commander = {
 	name = "Boris Pavlov"
-	portrait_path = "gfx\leaders\KOL\Kol3.tga"
+	portrait_path = "gfx\\leaders\\KOL\\Kol3.tga"
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Yuri Letlev"
-	portrait_path = "gfx\leaders\KOL\Kol4.tga"
+	portrait_path = "gfx\\leaders\\KOL\\Kol4.tga"
 	skill = 1
 }
 
