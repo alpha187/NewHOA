@@ -9,6 +9,9 @@ focus_tree = {
 			tag = ARS
 		}
 	}
+
+	continuous_focus_position = { x = 50 y = 1200 }
+
 	focus = {
 		id = ARS_politics_in_the_motherland
 		icon = GFX_Focus_ARS_1
@@ -2027,11 +2030,9 @@ focus_tree = {
 			add_timed_idea = {
 				idea = ARS_cobrastan_natives_protest
 				days = 365
-			}
-
 			add_stability = -0.05
 			add_war_support = -0.05
-			conscription = -0.01
+			}
 
 			add_popularity = {
 					ideology = democratic

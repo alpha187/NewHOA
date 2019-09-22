@@ -9,6 +9,9 @@ focus_tree = {
 			tag = COB
 		}
 	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+
 	focus = {
 		id = COB_freedom_for_the_homeland
 		icon = GFX_goal_generic_demand_territory
