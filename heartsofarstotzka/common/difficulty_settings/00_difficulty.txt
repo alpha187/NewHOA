@@ -48,49 +48,49 @@ difficulty_settings = {
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_ars"
+		key = "Strengthen Arstotzka"
 		modifier = diff_strong_ai_generic
 		countries = { ARS }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_kol"
+		key = "Strengthen Kolechia"
 		modifier = diff_strong_ai_generic
 		countries = { KOL }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_ant"
+		key = "Strengthen Antegria"
 		modifier = diff_strong_ai_generic
 		countries = { ANT }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_cob"
+		key = "Strengthen Cobristan"
 		modifier = diff_strong_ai_generic
 		countries = { COB }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_imp"
+		key = "Strengthen Impor"
 		modifier = diff_strong_ai_generic
 		countries = { IMP }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_obr"
+		key = "Strengthen Obristan"
 		modifier = diff_strong_ai_generic
 		countries = { OBR }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_rep"
+		key = "Strengthen Republia"
 		modifier = diff_strong_ai_generic
 		countries = { REP }
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "custom_diff_strong_unf"
+		key = "Strengthen United Federation"
 		modifier = diff_strong_ai_generic
 		countries = { UNF }
 		multiplier = 2.0
