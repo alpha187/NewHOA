@@ -544,7 +544,8 @@
  #
  ARS_fascism_party:0 "NSoA"
  ARS_fascism_party_long:0 "National Socialists of Arstotzka"
- ARS_democratic_party:0 "EZIC Star"
+ ARS_democratic_party:0 "OotES"
+ ARS_democratic_party_long:0 "Order of the EZIC Star"
  ARS_communism_party:0 "ACP"
  ARS_communism_party_long:0 "Arstotzkan Communist Party"
  ARS_neutrality_party:0 "AMP"
