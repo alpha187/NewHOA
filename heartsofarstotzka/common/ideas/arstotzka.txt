@@ -23,7 +23,7 @@ ideas = {
 					army_org_factor = 0.05
 					stability_factor = 0.05
 					production_speed_buildings_factor = -0.05
-					research_time_factor = -0.02
+					research_speed_factor = -0.02
 				}
 			}
 			ARS_kolechia_vanquished = {
@@ -44,7 +44,7 @@ ideas = {
 					war_support_factor = -0.1
 					army_org_factor = 0.1
 					production_speed_buildings_factor = 0.1
-					research_time_factor = -0.05
+					research_speed_factor = -0.05
 				}
 			}		
 			ARS_occupation_instability = {
@@ -70,7 +70,7 @@ ideas = {
 					enemy_partisan_effect = 1.0
 					drift_defence_factor = -1.0
 					political_power_gain = -1.0
-					research_time_factor = 0.15
+					research_speed_factor = 0.15
 					industrial_capacity_factory = -0.2
 					industrial_capacity_dockyard = -0.2
 					local_resources_factor = -0.25
@@ -93,14 +93,14 @@ ideas = {
 
 				modifier = {
 					stability_factor = -0.1
-					war_support = -0.1
+					war_support_factor = -0.1
 					conscription = -0.05
 					conscription_factor = -0.25
 					foreign_subversive_activites = 0.5
 					enemy_partisan_effect = 0.5
 					drift_defence_factor = -0.75
 					political_power_gain = -1.0
-					research_time_factor = 0.1
+					research_speed_factor = 0.1
 					industrial_capacity_factory = -0.1
 					industrial_capacity_dockyard = -0.1
 					local_resources_factor = -0.1
@@ -187,7 +187,7 @@ ideas = {
 				modifier = {
 					conscription = 0.05
 					conscription_factor = 0.25
-					research_time_factor = 0.10
+					research_speed_factor = 0.10
 					industrial_capacity_factory = -0.2
 					industrial_capacity_dockyard = -0.2
 					local_resources_factor = -0.2
@@ -343,7 +343,7 @@ ideas = {
 					stability_factor = -0.05
 					war_support_factor = -0.05
 					conscription = -0.05
-					conscription_factor = - 0.1
+					conscription_factor = -0.1
 					industrial_capacity_factory = -0.05
 					industrial_capacity_dockyard = -0.05
 					democratic_drift = 0.1
@@ -529,7 +529,7 @@ ideas = {
 				
 				modifier = {
 					training_time_factor = -0.1
-					division_attrition_factor = -0.05
+					attrition = -0.05
 				}
 			}
 			ARS_arstotzkan_revenge = {
@@ -550,8 +550,8 @@ ideas = {
 					stability_weekly = 0.01
 					political_power_gain = 1.0
 					army_attack_factor = 0.1
-					army_defense_factor = 0.1
-					division_recovery_factor = 0.1
+					army_defence_factor = 0.1
+					army_morale_factor = 0.1
 				}
 			}
 			ARS_state_education1 = {
@@ -565,7 +565,7 @@ ideas = {
 				picture = generic_research_bonus
 				
 				modifier = {
-					research_time_factor = -0.05
+					research_speed_factor = -0.05
 					stability_factor = 0.05
 				}
 			}
@@ -956,7 +956,5 @@ ideas = {
 					
 					traits = { air_warfare_theorist }
 				}
-
 			}
-	}
-}
+		}

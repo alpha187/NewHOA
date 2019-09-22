@@ -24,7 +24,7 @@ ideas = {
 					production_speed_buildings_factor = -0.1
 					industrial_capacity_factory = -0.25
 					industrial_capacity_dockyard = -0.25
-					research_time_factor = 0.1
+					research_speed_factor = 0.1
 					training_time_factor = 0.1
 					autonomy_gain = -0.25
 				}
@@ -153,7 +153,7 @@ ideas = {
 				
 				modifier = {
 					political_power_gain = 1.0
-					research_time_factor = -0.05
+					research_speed_factor = -0.05
 					drift_defence_factor = -1.0
 					foreign_subversive_activites = 1.0
 					enemy_partisan_effect = 1.0
@@ -307,7 +307,7 @@ ideas = {
 					production_speed_buildings_factor = -0.25
 					industrial_capacity_factory = -0.50
 					industrial_capacity_dockyard = -0.50
-					research_time_factor = 0.25
+					research_speed_factor = 0.25
 					training_time_factor = 0.25
 					autonomy_gain = 1.0
 				}
@@ -408,7 +408,7 @@ ideas = {
 				picture = generic_research_bonus
 				
 				modifier = {
-					research_time_factor = -0.1
+					research_speed_factor = -0.1
 					local_resources_factor = 0.1
 				}
 			}
@@ -538,7 +538,7 @@ ideas = {
 					foreign_subversive_activites = 1.0
 					enemy_partisan_effect = 1.0
 					consumer_goods_factor = 0.1
-					research_time_factor = 0.25
+					research_speed_factor = 0.25
 					industrial_capacity_factory = -0.25
 					industrial_capacity_dockyard = -0.25
 					local_resources_factor = -0.25
