@@ -66,7 +66,7 @@ difficulty_settings = {
 		multiplier = 2.0
 	}
 	difficulty_setting = {
-		key = "Strengthen Cobristan"
+		key = "Strengthen Cobrastan"
 		modifier = diff_strong_ai_generic
 		countries = { COB }
 		multiplier = 2.0
