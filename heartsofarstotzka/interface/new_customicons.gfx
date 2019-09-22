@@ -1,0 +1,27 @@
+spriteTypes = { 
+##Icon For: 1342016
+ SpriteType = { 
+ name = "GFX_Focus_ARS_1" 
+ texturefile = "gfx/interface/goals/GFX_Focus_ARS_1.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_air" 
+ texturefile = "gfx/interface/goals/GFX_air.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_ARS_Rule" 
+ texturefile = "gfx/interface/goals/GFX_ARS_Rule.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_ARS_Soldier" 
+ texturefile = "gfx/interface/goals/GFX_ARS_Soldier.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_labour" 
+ texturefile = "gfx/interface/goals/GFX_labour.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_ARS_DESTROY" 
+ texturefile = "gfx/interface/goals/GFX_ARS_DESTROY.tga" 
+ } 
+ }

@@ -1,0 +1,26 @@
+spriteTypes = { 
+ SpriteType = { 
+ name = "GFX_ARS_Border" 
+ texturefile = "gfx/interface/goals/GFX_ARS_Border.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_Ezic_Rise" 
+ texturefile = "gfx/interface/goals/GFX_Ezic_Rise.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_ARS_Helmet" 
+ texturefile = "gfx/interface/goals/GFX_ARS_Helmet.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_ARS_Swords" 
+ texturefile = "gfx/interface/goals/GFX_ARS_Swords.tga" 
+ }
+ SpriteType = { 
+ name = "GFX_ARS_Shield" 
+ texturefile = "gfx/interface/goals/GFX_ARS_Shield.tga" 
+ } 
+ SpriteType = { 
+ name = "GFX_ARSrule" 
+ texturefile = "gfx/interface/goals/GFX_ARSrule.tga" 
+ } 
+ }
