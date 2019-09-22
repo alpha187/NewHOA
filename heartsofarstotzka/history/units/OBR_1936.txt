@@ -96,25 +96,25 @@ division_template = {
 	}
 	division= {	
 		name = "Obris Motorized Division"
-		location = 9359						
+		location = 6371						
 		division_template = "Obris Motorized Division"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		name = "Obris Motorized Division"
-		location = 9359						
+		location = 6371						
 		division_template = "Obris Motorized Division"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		name = "Obris Motorized Division"
-		location = 9359
+		location = 6371
 		division_template = "Obris Motorized Division"
 		start_experience_factor = 0.4
 	}
 	division= {	
 		name = "Obris Motorized Division"
-		location = 9359
+		location = 6371
 		division_template = "Obris Motorized Division"
 		start_experience_factor = 0.4
 	}
