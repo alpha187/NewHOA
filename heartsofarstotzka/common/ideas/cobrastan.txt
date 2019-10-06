@@ -1,7 +1,6 @@
 ideas = {
 
 	country = {
-
 			COB_marginalized_cobrastan = {
 
 				allowed = {
@@ -25,7 +24,7 @@ ideas = {
 					production_speed_buildings_factor = -0.1
 					industrial_capacity_factory = -0.25
 					industrial_capacity_dockyard = -0.25
-					research_speed_factor = 0.1
+					research_speed_factor = -0.1
 					training_time_factor = 0.1
 					autonomy_gain = -0.25
 				}
@@ -154,7 +153,7 @@ ideas = {
 				
 				modifier = {
 					political_power_gain = 1.0
-					research_speed_factor = -0.05
+					research_speed_factor = 0.05
 					drift_defence_factor = -1.0
 					foreign_subversive_activites = 1.0
 					enemy_partisan_effect = 1.0
@@ -308,7 +307,7 @@ ideas = {
 					production_speed_buildings_factor = -0.25
 					industrial_capacity_factory = -0.50
 					industrial_capacity_dockyard = -0.50
-					research_speed_factor = 0.25
+					research_speed_factor = -0.25
 					training_time_factor = 0.25
 					autonomy_gain = 1.0
 				}
@@ -409,7 +408,7 @@ ideas = {
 				picture = generic_research_bonus
 				
 				modifier = {
-					research_speed_factor = -0.1
+					research_speed_factor = 0.1
 					local_resources_factor = 0.1
 				}
 			}
@@ -430,7 +429,7 @@ ideas = {
 				modifier = {
 					stability_factor = -0.1
 					army_morale_factor = 0.1
-					conscription_factor = 0.5
+					conscription_factor = 0.25
 					training_time_factor = -0.1
 					autonomy_gain = -0.25
 				}
@@ -452,7 +451,7 @@ ideas = {
 				modifier = {
 					stability_factor = -0.1
 					army_morale_factor = 0.1
-					conscription_factor = 0.5
+					conscription_factor = 0.25
 					training_time_factor = -0.1
 				}
 			}
@@ -533,13 +532,13 @@ ideas = {
 				picture = tfv_can_conscription_crisis
 				
 				modifier = {
-					stability_factor = -0.50
+					stability_factor = -1.0
 					war_support_factor = -0.25
 					drift_defence_factor = -1.0
 					foreign_subversive_activites = 1.0
 					enemy_partisan_effect = 1.0
 					consumer_goods_factor = 0.1
-					research_speed_factor = 0.25
+					research_speed_factor = -0.25
 					industrial_capacity_factory = -0.25
 					industrial_capacity_dockyard = -0.25
 					local_resources_factor = -0.25
@@ -563,12 +562,56 @@ ideas = {
 				picture = FRA_matignon_agreements
 				
 				modifier = {
+					surrender_limit = -0.5
+					local_factory_sabotage = 10.0
 					drift_defence_factor = -10.0
 					foreign_subversive_activites = 10.0
 					enemy_partisan_effect = 10.0
 					conscription = 0.05
 					conscription_factor = 0.2
 					MONTHLY_POPULATION = 10.0
+				}
+			}
+			COB_for_the_people = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_reserve_divisions
+				
+				modifier = {
+					non_core_manpower = 0.1
+					conscription_factor = 0.05
+					attrition = -0.05
+				}
+			}
+			COB_cobrastan_unchained = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_volunteer_expedition_bonus
+				
+				modifier = {
+					army_core_attack_factor = 0.1
+					army_core_defence_factor = 0.1
+					opinion_gain_monthly_factor = 0.25
+					trade_opinion_factor = 0.25
+					improve_relations_maintain_cost_factor = -0.25
 				}
 			}
 	}

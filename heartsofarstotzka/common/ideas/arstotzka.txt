@@ -19,11 +19,12 @@ ideas = {
 
 				modifier = {
 					drift_defence_factor = 0.1
+					ai_get_ally_desire_factor = -10000
 					join_faction_tension = 0.5
 					army_org_factor = 0.05
 					stability_factor = 0.05
 					production_speed_buildings_factor = -0.05
-					research_speed_factor = -0.02
+					research_speed_factor = -0.05
 				}
 			}
 			ARS_kolechia_vanquished = {
@@ -41,12 +42,154 @@ ideas = {
 				picture = ARS_war_with_kolechia
 				
 				modifier = {
-					war_support_factor = -0.1
 					army_org_factor = 0.1
 					production_speed_buildings_factor = 0.1
-					research_speed_factor = -0.05
+					research_speed_factor = 0.05
+					industry_repair_factor = 1.0
+					stability_weekly = -0.01
+					war_support_weekly = -0.01
+					industrial_capacity_factory = -0.25
+					industrial_capacity_dockyard = -0.25
+					local_factory_sabotage = 10.0
+					foreign_subversive_activites = 10.0
+					enemy_partisan_effect = 10.0
+					drift_defence_factor = -10.0
 				}
-			}		
+			}
+			ARS_kolechia_stabilized1 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = ARS_war_with_kolechia
+				
+				modifier = {
+					army_org_factor = 0.1
+					production_speed_buildings_factor = 0.1
+					research_speed_factor = 0.05
+					industrial_capacity_factory = -0.1
+					industrial_capacity_dockyard = -0.1
+					local_factory_sabotage = 5.0
+					foreign_subversive_activites = 5.0
+					enemy_partisan_effect = 5.0
+					drift_defence_factor = -5.0
+				}
+			}
+			ARS_kolechia_stabilized2 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = ARS_war_with_kolechia
+				
+				modifier = {
+					army_org_factor = 0.1
+					production_speed_buildings_factor = 0.1
+					research_speed_factor = 0.05
+					industrial_capacity_factory = -0.05
+					industrial_capacity_dockyard = -0.05
+					local_factory_sabotage = 2.0
+					foreign_subversive_activites = 2.0
+					enemy_partisan_effect = 2.0
+					drift_defence_factor = -2.0
+				}
+			}
+			ARS_kolechia_partitioned = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = ARS_war_with_kolechia
+				
+				modifier = {
+					army_org_factor = 0.1
+					production_speed_buildings_factor = 0.1
+					research_speed_factor = 0.05
+					industrial_capacity_factory = -0.05
+					industrial_capacity_dockyard = -0.05
+					foreign_subversive_activites = 1.0
+					enemy_partisan_effect = 1.0
+					experience_gain_army_factor = 0.1
+				}
+			}
+			ARS_kolechia_mentored = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = ARS_war_with_kolechia
+				
+				modifier = {
+					army_org_factor = 0.1
+					production_speed_buildings_factor = 0.1
+					research_speed_factor = 0.05
+					industrial_capacity_factory = -0.05
+					industrial_capacity_dockyard = -0.05
+					local_factory_sabotage = 1.0
+					foreign_subversive_activites = 1.0
+					enemy_partisan_effect = 1.0
+					drift_defence_factor = -1.0
+				}
+			}
+			ARS_kolechia_occupied1 = {
+			
+				allowed = {
+					always = no
+				}
+				
+				allowed_civil_war = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = ARS_war_with_kolechia
+				
+				modifier = {
+					experience_gain_army_factor = -0.1
+					army_morale_factor = -0.1
+					army_org_Factor = -0.1
+					attrition = 0.1
+					production_speed_buildings_factor = 0.1
+					research_speed_factor = 0.05
+					stability_weekly = -0.01
+					war_support_weekly = -0.01
+					industrial_capacity_factory = -0.25
+					industrial_capacity_dockyard = -0.25
+					local_factory_sabotage = 10.0
+					foreign_subversive_activites = 10.0
+					enemy_partisan_effect = 10.0
+					drift_defence_factor = -10.0
+				}
+			}
 			ARS_occupation_instability = {
 
 				allowed = {
@@ -64,17 +207,20 @@ ideas = {
 				modifier = {
 					stability_factor = -0.2
 					war_support_factor = -0.2
+					surrender_limit = -0.5
+					local_factory_sabotage = 1.0
 					conscription = -0.1
 					conscription_factor = -0.5
 					foreign_subversive_activites = 1.0
 					enemy_partisan_effect = 1.0
 					drift_defence_factor = -1.0
 					political_power_gain = -1.0
-					research_speed_factor = 0.15
+					research_speed_factor = -0.15
 					industrial_capacity_factory = -0.2
 					industrial_capacity_dockyard = -0.2
 					local_resources_factor = -0.25
 					consumer_goods_factor = 0.1
+					experience_gain_army_factor = -0.75
 				}
 			}
 			ARS_entrenched_occupation = {
@@ -94,17 +240,20 @@ ideas = {
 				modifier = {
 					stability_factor = -0.1
 					war_support_factor = -0.1
+					surrender_limit = -0.25
+					local_factory_sabotage = 0.75
 					conscription = -0.05
 					conscription_factor = -0.25
 					foreign_subversive_activites = 0.5
 					enemy_partisan_effect = 0.5
 					drift_defence_factor = -0.75
 					political_power_gain = -1.0
-					research_speed_factor = 0.1
+					research_speed_factor = -0.1
 					industrial_capacity_factory = -0.1
 					industrial_capacity_dockyard = -0.1
 					local_resources_factor = -0.1
 					consumer_goods_factor = 0.05
+					experience_gain_army_factor = -0.5
 				}
 			}
 			ARS_accepted_occupation = {
@@ -122,10 +271,13 @@ ideas = {
 				picture = generic_communism_drift_bonus
 				
 				modifier = {
+					surrender_limit = -0.1
+					local_factory_sabotage = 0.5
 					foreign_subversive_activites = 0.25
 					enemy_partisan_effect = 0.25
 					drift_defence_factor = -0.25
 					consumer_goods_factor = -0.05
+					experience_gain_army_factor = -0.25
 					MONTHLY_POPULATION = 0.05
 				}
 			}
@@ -185,12 +337,12 @@ ideas = {
 				picture = generic_victors_of_ww1
 
 				modifier = {
-					conscription = 0.05
-					conscription_factor = 0.25
-					research_speed_factor = 0.10
-					industrial_capacity_factory = -0.2
-					industrial_capacity_dockyard = -0.2
-					local_resources_factor = -0.2
+					stability_factor = -0.1
+					war_support_factor = -0.1
+					research_speed_factor = 0.1
+					industrial_capacity_factory = 0.1
+					industrial_capacity_dockyard = 0.1
+					local_resources_factor = 0.1
 					consumer_goods_factor = 0.1
 				}
 			}
@@ -210,16 +362,8 @@ ideas = {
 				
 				modifier = {
 					foreign_subversive_activites = -0.75
-						sub_units = {
-							military_police = {
-								cost = 0.25
-								training_time = -1.0
-								soft_attack = 0.5
-								defense = 0.5
-								supply_use = 1.0
-								equipment = 1.0
-							}
-						}
+					special_forces_cap = 0.05
+					partisan_effect = 0.25
 				}
 			}		
 			ARS_arstotzkan_union = {
@@ -261,7 +405,7 @@ ideas = {
 					conscription = 0.05
 					stability_factor = -0.1
 					war_support_factor = 0.1
-					training_time_factor = 0.1
+					training_time_factor = -0.1
 				}
 			}
 			ARS_arstotzkan_zampolit = {
@@ -301,8 +445,12 @@ ideas = {
 				picture = anti_soviet_pact
 				
 				modifier = {
+					stability_weekly = -0.01
 					stability_factor = -0.25
 					war_support_factor = 0.1
+					local_factory_sabotage = 1.0
+					enemy_partisan_effect = 1.0
+					foreign_subversive_activites = 1.0
 				}
 			}
 			ARS_cobrastan_question = {
@@ -320,6 +468,8 @@ ideas = {
 				picture = FRA_matignon_agreements
 				
 				modifier = {
+					surrender_limit = -0.1
+					local_factory_sabotage = 0.1
 					stability_factor = -0.05
 					conscription = -0.05
 					conscription_factor = -0.1
@@ -342,7 +492,9 @@ ideas = {
 				modifier = {
 					stability_factor = -0.05
 					war_support_factor = -0.05
-					conscription = -0.06
+					surrender_limit = -0.1
+					local_factory_sabotage = 0.25
+					conscription = -0.05
 					conscription_factor = -0.1
 					industrial_capacity_factory = -0.05
 					industrial_capacity_dockyard = -0.05
@@ -458,6 +610,8 @@ ideas = {
 					political_power_gain = -0.5
 					stability_factor = -0.1
 					war_support_factor = -0.1
+					surrender_limit = -0.25
+					local_factory_sabotage = 0.5
 					conscription = -0.05
 					conscription_factor = -0.1
 					drift_defence_factor = -0.5
@@ -483,6 +637,8 @@ ideas = {
 					political_power_gain = -1.0
 					stability_factor = -0.2
 					war_support_factor = -0.25
+					surrender_limit = -0.5
+					local_factory_sabotage = 1.0
 					conscription = -0.25
 					conscription_factor = -0.5
 					drift_defence_factor = -1.0
@@ -565,7 +721,7 @@ ideas = {
 				picture = generic_research_bonus
 				
 				modifier = {
-					research_speed_factor = -0.05
+					research_speed_factor = 0.05
 					stability_factor = 0.05
 				}
 			}
@@ -665,6 +821,8 @@ ideas = {
 				modifier = {
 					stability_factor = -0.15
 					war_support_factor = -0.05
+					surrender_limit = -0.1
+					local_factory_sabotage = 0.25
 					drift_defence_factor = -0.25
 					foreign_subversive_activites = 0.25
 					enemy_partisan_effect = 0.25
@@ -684,6 +842,8 @@ ideas = {
 				modifier = {
 					stability_factor = -0.1
 					war_support_factor = -0.05
+					surrender_limit = -0.1
+					local_factory_sabotage = 0.25
 					drift_defence_factor = -0.25
 					foreign_subversive_activites = 0.25
 					enemy_partisan_effect = 0.25
@@ -737,8 +897,126 @@ ideas = {
 				
 				modifier = {
 					conscription = -0.05
-					conscription_factor = -0.25
+					conscription_factor = -1.0
 					MONTHLY_POPULATION = -1.0
+				}
+			}
+			ARS_trust_the_state = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_oppression
+				
+				modifier = {
+					democratic_drift = -0.02
+					political_power_factor = 0.05
+					drift_defence_factor = -0.25
+					foreign_subversive_activites = 0.1
+					enemy_partisan_effect = 0.1
+				}
+			}
+			ARS_nationalist_state = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_fascism_drift_bonus
+				
+				modifier = {
+					fascism_drift = 0.1
+					military_leader_cost_factor = -0.25
+					democratic_drift = -0.02
+					political_power_factor = 0.05
+					drift_defence_factor = -0.25
+					foreign_subversive_activites = 0.1
+					enemy_partisan_effect = 0.1
+				}
+			}
+			ARS_communist_state = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_communism_drift_bonus
+				
+				modifier = {
+					communism_drift = 0.05
+					justify_war_goal_time = -0.25
+					democratic_drift = -0.02
+					political_power_factor = 0.05
+					drift_defence_factor = -0.25
+					foreign_subversive_activites = 0.1
+					enemy_partisan_effect = 0.1
+				}
+			}
+			ARS_obristan_volunteer_influx = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_manpower_bonus
+				
+				modifier = {
+					foreign_subversive_activites = 0.1
+					enemy_partisan_effect = 0.1
+					drift_defence_factor = -0.1
+					experience_gain_army_factor = -0.1
+					army_morale_factor = -0.05
+					army_org_Factor = -0.05
+					attrition = 0.05
+				}
+			}
+			ARS_united_federation_volunteer_influx = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_manpower_bonus
+				
+				modifier = {
+					foreign_subversive_activites = 0.1
+					enemy_partisan_effect = 0.1
+					drift_defence_factor = -0.1
+					experience_gain_army_factor = -0.1
+					army_morale_factor = -0.05
+					army_org_Factor = -0.05
+					attrition = 0.05
+				}
+			}
+			ARS_imrean_volunteer_influx = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_manpower_bonus
+				
+				modifier = {
+					foreign_subversive_activites = 0.1
+					enemy_partisan_effect = 0.1
+					drift_defence_factor = -0.1
+					experience_gain_army_factor = -0.1
+					army_morale_factor = -0.05
+					army_org_Factor = -0.05
+					attrition = 0.05
 				}
 			}
 	}
@@ -956,5 +1234,7 @@ ideas = {
 					
 					traits = { air_warfare_theorist }
 				}
+
 			}
-		}
+	}
+}
