@@ -1,0 +1,1106 @@
+focus_tree = {
+	id = cobrastan_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COB
+		}
+	}
+	focus = {
+		id = COB_freedom_for_the_homeland
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 150
+			200 = { add_manpower = -10000 }
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = COB_kind_old_uncle
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = COB_freedom_for_the_homeland }
+		x = 10
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = COB_1234_okok
+		}
+	}
+	focus = {
+		id = COB_national_growth
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = COB_freedom_for_the_homeland }
+		x = 14
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_ideas = limited_conscription
+			add_ideas = partial_economic_mobilisation
+		}
+	}
+	focus = {
+		id = COB_restore_the_old_capital
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = COB_freedom_for_the_homeland }
+		x = 5
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 150
+			set_province_name = { id = 3686 name = "Bestburg" }
+		}
+	}
+	focus = {
+		id = COB_cobrastani_liberty
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = COB_restore_the_old_capital }
+		mutually_exclusive = { focus = COB_royalty_revived focus = COB_envigorated_nationalism focus = COB_the_peoples_motherland }
+		x = 2
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_peoples_cobra
+		}
+	}
+	focus = {
+		id = COB_freedom_across_the_land
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = COB_cobrastani_liberty }
+		x = 2
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_stability = 0.2
+		}
+	}
+	focus = {
+		id = COB_liberty_or_death
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = COB_freedom_across_the_land }
+		x = 2
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_ideas = COB_people_empowered
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+	focus = {
+		id = COB_royalty_revived
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = COB_restore_the_old_capital }
+		mutually_exclusive = { focus = COB_cobrastani_liberty focus = COB_envigorated_nationalism focus = COB_the_peoples_motherland }
+		x = 4
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_royal_cobra
+		}
+	}
+	focus = {
+		id = COB_dignity_restored
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = COB_royalty_revived }
+		x = 4
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = COB_monarchy_restored
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = COB_dignity_restored }
+		x = 4
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_ideas = COB_empires_rebirth
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = COB_envigorated_nationalism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = COB_restore_the_old_capital }
+		mutually_exclusive = { focus = COB_cobrastani_liberty focus = COB_royalty_revived focus = COB_the_peoples_motherland }
+		x = 6
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_nationalist_cobra
+		}
+	}
+	focus = {
+		id = COB_unfettered_patriotism
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		prerequisite = { focus = COB_envigorated_nationalism }
+		x = 6
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = COB_eternally_prepared
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = COB_unfettered_patriotism }
+		x = 6
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_ideas = COB_unforgettable
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = COB_the_peoples_motherland
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = COB_restore_the_old_capital }
+		mutually_exclusive = { focus = COB_cobrastani_liberty focus = COB_royalty_revived focus = COB_envigorated_nationalism }
+		x = 8
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_workers_cobra
+		}
+	}
+	focus = {
+		id = COB_family_duty_country
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = COB_the_peoples_motherland }
+		x = 8
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_political_power = 150
+			260 = { add_manpower = -25000 }
+			add_manpower = 25000
+		}
+	}
+	focus = {
+		id = COB_shoulder_to_shoulder
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = COB_family_duty_country }
+		x = 8
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_ideas = COB_family_and_unity
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = COB_cobrastani_natives
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = COB_national_growth }
+		x = 12
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = -0.05
+			}
+
+			227 = { add_manpower = -10000 }
+			add_manpower = 10000
+
+			137 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			196 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			234 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = COB_nirsk_engineering_assistance
+		icon = GFX_goal_communist_factories
+		prerequisite = { focus = COB_cobrastani_natives }
+		x = 12
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = -0.15
+			}
+			137 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			196 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			234 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = COB_integrated_engineering_teams
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = COB_nirsk_engineering_assistance }
+		prerequisite = { focus = COB_arstotzkan_state_arsenal }
+		x = 13
+		y = 4
+		cost = 15
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_engineering_teams
+			add_autonomy_ratio = {
+				value = -0.15
+			}
+			137 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			196 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			234 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = COB_centralized_industrialization
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = COB_arstotzkan_state_arsenal }
+		prerequisite = { focus = COB_the_maikop_expansion }
+		x = 15
+		y = 4
+		cost = 15
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = -0.15
+			}
+			137 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			196 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			234 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+				add_resource = {
+					type = rubber
+					amount = 20
+					state = 196
+				}
+		}
+	}
+	focus = {
+		id = COB_rebuild_national_arsenals
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = COB_national_growth }
+		x = 14
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = -0.05
+			}
+
+			221 = { add_manpower = -10000 }
+			add_manpower = 10000
+
+			137 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			196 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			234 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = COB_arstotzkan_state_arsenal
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = COB_rebuild_national_arsenals }
+		x = 14
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = -0.15
+			}
+			137 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			196 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			234 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = COB_the_peoples_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = COB_national_growth }
+		x = 16
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_full_employment
+			add_autonomy_ratio = {
+				value = -0.05
+			}
+			137 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			196 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			234 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = COB_the_maikop_expansion
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = COB_the_peoples_roads }
+		x = 16
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = -0.15
+			}
+				add_resource = {
+					type = steel
+					amount = 30
+					state = 234
+				}
+		}
+	}
+	focus = {
+		id = COB_reliable_military
+		icon = GFX_goal_manpower
+		prerequisite = { focus = COB_national_growth }
+		x = 18
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_forever_faithful
+		}
+	}
+	focus = {
+		id = COB_lessons_from_arstotzka
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = COB_reliable_military }
+		x = 18
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = COB_black_sea_navy
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = COB_national_growth }
+		x = 20
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			navy_experience = 25
+			add_autonomy_ratio = {
+				value = -0.05
+			}
+			137 = {
+			add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			196 = {
+			add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			234 = {
+			add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = COB_naval_resurgence
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = COB_black_sea_navy }
+		x = 20
+		y = 3
+		cost = 12
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 3
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 3
+				technology = marines
+				technology = marines2
+				technology = marines3
+			}
+		}
+	}
+	focus = {
+		id = COB_national_resurrection
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = COB_liberty_or_death focus = COB_monarchy_restored focus = COB_eternally_prepared focus = COB_shoulder_to_shoulder }
+		mutually_exclusive = { focus = COB_national_commitment focus = COB_national_independence }
+		x = 3
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = no
+
+		available = {
+			is_subject = yes
+		}
+
+		completion_reward = {
+			swap_ideas = { remove_idea = COB_marginalized_cobrastan add_idea = COB_improved_marginalized_cobrastan }
+		}
+	}
+	focus = {
+		id = COB_patriotism_rewarded
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = COB_national_resurrection }
+		x = 3
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			remove_ideas = COB_improved_marginalized_cobrastan
+			add_ideas = COB_patriotism_rewarded
+			add_timed_idea = {
+				idea = COB_refugees_offloaded
+				days = 365
+			}
+			ARS = {
+				add_timed_idea = {
+					idea = ARS_cobrastani_dissent
+					days = 365
+				}
+			}
+		}
+	}
+	focus = {
+		id = COB_national_defence_initiative
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = COB_patriotism_rewarded focus = COB_independence_rewarded }
+		x = 1
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_national_defence
+		}
+	}
+	focus = {
+		id = COB_science_from_the_frontier
+		icon = GFX_goal_research_silver
+		prerequisite = { focus = COB_patriotism_rewarded focus = COB_independence_rewarded }
+		x = 3
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_frontier_science
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = COB_the_impor_decree
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = COB_the_bestburg_conference }
+		x = 1
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_state_claim = 203
+			add_state_claim = 197
+				create_wargoal = {
+						type = take_state_focus
+						target = IMP
+						generator = { 203 }
+				}
+		}
+	}
+	focus = {
+		id = COB_united_federation_coast
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = COB_the_bestburg_conference }
+		x = 3
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_state_claim = 192
+			add_state_claim = 198
+			add_state_claim = 78
+				create_wargoal = {
+						type = take_state_focus
+						target = UNF
+						generator = { 91 }
+				}
+		}
+	}
+	focus = {
+		id = COB_the_bestburg_conference
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = COB_patriotism_rewarded focus = COB_independence_rewarded focus = COB_loyalty_rewarded }
+		x = 5
+		y = 7
+		cost = 15
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = COB_national_commitment
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = COB_liberty_or_death focus = COB_monarchy_restored focus = COB_eternally_prepared focus = COB_shoulder_to_shoulder }
+		mutually_exclusive = { focus = COB_national_independence focus = COB_national_resurrection }
+		x = 7
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = no
+
+		available = {
+			is_subject = yes
+		}
+
+		completion_reward = {
+			swap_ideas = { remove_idea = COB_marginalized_cobrastan add_idea = COB_reconstructed_cobrastan }
+		}
+	}
+	focus = {
+		id = COB_loyalty_rewarded
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = COB_national_commitment }
+		x = 7
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			remove_ideas = COB_reconstructed_cobrastan
+			add_ideas = COB_loyalty_rewarded
+		}
+	}
+	focus = {
+		id = COB_research_coalition
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = COB_loyalty_rewarded }
+		x = 7
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = COB_research_partners
+			ARS = { add_to_tech_sharing_group = arstotzkan_research }
+			add_to_tech_sharing_group = arstotzkan_research
+			COB = {
+  				modify_tech_sharing_bonus = {
+     				id = arstotzkan_research
+     				bonus = 0.1  
+				}
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = COB_satellite_state_volunteers
+		icon = GFX_goal_manpower
+		prerequisite = { focus = COB_loyalty_rewarded }
+		x = 9
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = COB_military_advisors
+		}
+	}
+	focus = {
+		id = COB_romanian_resolution
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = COB_the_bestburg_conference }
+		x = 5
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_state_claim = 79
+			add_state_claim = 80
+			add_state_claim = 46
+			add_state_claim = 81
+			add_state_claim = 77
+				create_wargoal = {
+						type = take_state_focus
+						target = ROM
+						generator = { 46 }
+				}
+		}
+	}
+	focus = {
+		id = COB_balkan_reclamation
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = COB_the_bestburg_conference }
+		x = 7
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_state_claim = 211
+			add_state_claim = 212
+			add_state_claim = 48
+			add_state_claim = 184
+				create_wargoal = {
+						type = take_state_focus
+						target = BUL
+						generator = { 48 }
+				}
+				create_wargoal = {
+						type = take_state_focus
+						target = GRE
+						generator = { 184 }
+				}
+		}
+	}
+	focus = {
+		id = COB_south_mountain_shores
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = COB_the_bestburg_conference }
+		x = 9
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_state_claim = 341
+			add_state_claim = 340
+			add_state_claim = 347
+			add_state_claim = 356
+			add_state_claim = 355
+			add_state_claim = 354
+				create_wargoal = {
+						type = puppet_wargoal_focus
+						target = TUR
+						generator = { 341 }
+				}
+		}
+	}
+	focus = {
+		id = COB_patriotism_triumphant
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = COB_patriotism_rewarded }
+		prerequisite = { focus = COB_the_impor_decree focus = COB_united_federation_coast focus = COB_romanian_resolution focus = COB_balkan_reclamation focus = COB_south_mountain_shores }
+		x = 2
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 150
+			swap_ideas = { remove_idea = COB_patriotism_rewarded add_idea = COB_improved_patriotism_rewarded }
+		}
+	}
+	focus = {
+		id = COB_loyalty_eternal
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = COB_loyalty_rewarded }
+		prerequisite = { focus = COB_the_impor_decree focus = COB_united_federation_coast focus = COB_romanian_resolution focus = COB_balkan_reclamation focus = COB_south_mountain_shores }
+		x = 8
+		y = 9
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+		add_political_power = 150
+		swap_ideas = { remove_idea = COB_military_advisors add_idea = COB_improved_military_advisors }
+		swap_ideas = { remove_idea = COB_loyalty_rewarded add_idea = COB_improved_loyalty_rewarded }
+		}
+	}
+	focus = {
+		id = COB_cobrastan_returns
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = COB_patriotism_triumphant focus = COB_independence_empowered focus = COB_loyalty_eternal }
+		x = 5
+		y = 10
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			remove_ideas = COB_immigration_overload
+			add_state_core = 79
+			add_state_core = 80
+			add_state_core = 46
+			add_state_core = 81
+			add_state_core = 77
+			add_state_core = 211
+			add_state_core = 212
+			add_state_core = 48
+			add_state_core = 184
+			add_state_core = 341
+			add_state_core = 340
+			add_state_core = 347
+			add_state_core = 356
+			add_state_core = 355
+			add_state_core = 354
+		}
+	}
+	focus = {
+		id = COB_the_ultimate_confrontation
+		icon = GFX_goal_soviet_threat
+		prerequisite = { focus = COB_cobrastan_returns }
+		x = 5
+		y = 11
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
+			add_state_claim = 235
+			add_state_claim = 232
+			add_state_claim = 233
+			add_state_claim = 231
+			add_state_claim = 230
+			add_state_claim = 229
+			add_state_core = 235
+			add_state_core = 232
+			add_state_core = 233
+			add_state_core = 231
+			add_state_core = 230
+			add_state_core = 229
+				create_wargoal = {
+						type = take_state_focus
+						target = SOV
+						generator = { 229 }
+				}
+		}
+	}
