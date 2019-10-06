@@ -567,3 +567,15 @@ OBR = {
 	color = rgb { 183 0 0 }
 	color_ui = rgb { 183 0 0 }
 }
+NKO = {
+	color = rgb { 100 0 0 }
+	color_ui = rgb { 100 0 0 }
+}
+SKO = {
+	color = rgb { 100 0 0 }
+	color_ui = rgb { 100 0 0 }
+}
+SIB = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
