@@ -13,9 +13,9 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1200 }
 
 	focus = {
-		id = ARS_politics_in_the_motherland
-		icon = GFX_Focus_ARS_1
-		x = 5
+		id = ARS_ministry_of_the_state
+		icon = GFX_goal_generic_demand_territory
+		x = 7
 		y = 0
 		cost = 10
 		
@@ -26,10 +26,35 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ARS_ministry_of_labor
+		icon = GFX_r56_goal_FRA_work_with_the_cgt
+		x = 36
+		y = 0
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ARS_ministry_of_propaganda
+		icon = GFX_goal_mexico_litteracy_program
+		x = 38
+		y = 0
+		cost = 1
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = ARS_fortify_the_border
 		icon = GFX_goal_generic_construct_military
-		x = 33
-		y = 0
+		prerequisite = { focus = ARS_ministry_of_labor }
+		x = 35
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 8
@@ -167,7 +192,7 @@ focus_tree = {
 	focus = {
 		id = ARS_trust_the_state
 		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = ARS_politics_in_the_motherland }
+		prerequisite = { focus = ARS_ministry_of_the_state }
 		mutually_exclusive = { focus = ARS_trust_the_people }
 		available = {
 			OR = {
@@ -176,7 +201,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = 6
+		x = 8
 		y = 1
 		cost = 10
 		
@@ -197,13 +222,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = collectivist_ethos_focus
+			add_ideas = ARS_trust_the_state
 		}
 	}
 	focus = {
 		id = ARS_trust_the_people
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = ARS_politics_in_the_motherland }
+		prerequisite = { focus = ARS_ministry_of_the_state }
 		mutually_exclusive = { focus = ARS_trust_the_state }
 		available = {
 			OR = {
@@ -212,7 +237,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = 4
+		x = 6
 		y = 1
 		cost = 10
 		
@@ -238,8 +263,8 @@ focus_tree = {
 	focus = {
 		id = ARS_east_grestin_border_checkpoint
 		icon = GFX_r56_focus_city_chain_forts
-		prerequisite = { focus = ARS_politics_in_the_motherland }
-		x = 2
+		prerequisite = { focus = ARS_ministry_of_the_state }
+		x = 4
 		y = 1
 		cost = 5
 		
@@ -252,8 +277,8 @@ focus_tree = {
 	focus = {
 		id = ARS_arstotzkan_nationals_return
 		icon = GFX_focus_generic_concessions
-		prerequisite = { focus = ARS_politics_in_the_motherland }
-		x = 8
+		prerequisite = { focus = ARS_ministry_of_the_state }
+		x = 10
 		y = 1
 		cost = 5
 		
@@ -270,7 +295,7 @@ focus_tree = {
 		prerequisite = { focus = ARS_trust_the_people }
 		prerequisite = { focus = ARS_arstotzkan_nationals_return }
 		mutually_exclusive = { focus = ARS_back_to_old_traditions focus = ARS_national_socialism focus = ARS_secure_the_motherland }
-		x = 3
+		x = 5
 		y = 2
 		cost = 10
 		
@@ -310,7 +335,7 @@ focus_tree = {
 		id = ARS_arstotzka_for_the_people
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = ARS_arstotzkan_liberalization }
-		x = 3
+		x = 5
 		y = 3
 		cost = 10
 		
@@ -337,8 +362,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = ARS_ezic_rises1
-			add_ideas = ARS_ezic_rises2
+			swap_ideas = { remove_idea = ARS_ezic_rises1 add_idea = ARS_ezic_rises2 }
 			
 			add_popularity = {
 					ideology = democratic
@@ -350,7 +374,7 @@ focus_tree = {
 		id = ARS_arstotzkan_freedom
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = ARS_arstotzka_for_the_people }
-		x = 3
+		x = 5
 		y = 4
 		cost = 10
 
@@ -377,8 +401,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = ARS_ezic_rises2
-			add_ideas = ARS_ezic_triumphant
+			swap_ideas = { remove_idea = ARS_ezic_rises2 add_idea = ARS_ezic_triumphant }
+
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = yes
@@ -389,7 +413,7 @@ focus_tree = {
 		id = ARS_with_open_arms
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = ARS_arstotzkan_freedom }
-		x = 3
+		x = 5
 		y = 5
 		cost = 10
 		
@@ -398,6 +422,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = ARS_illegal_immigration
 			remove_ideas = ARS_papers_please
+			remove_ideas = ARS_ezic_star
 			add_ideas = ARS_immigration_amnesty
 		}
 	}
@@ -447,8 +472,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			remove_ideas = ARS_glory_of_old1
-			add_ideas = ARS_glory_of_old2
+			swap_ideas = { remove_idea = ARS_glory_of_old1 add_idea = ARS_glory_of_old2 }
 			
 			add_popularity = {
 					ideology = neutrality
@@ -467,8 +491,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			remove_ideas = ARS_glory_of_old2
-			add_ideas = ARS_glory_of_old3
+			swap_ideas = { remove_idea = ARS_glory_of_old2 add_idea = ARS_glory_of_old3 }
+
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
@@ -486,8 +510,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			remove_ideas = ARS_glory_of_old3
-			add_ideas = ARS_glory_of_old4
+			remove_ideas = ARS_ezic_star
+			swap_ideas = { remove_idea = ARS_glory_of_old3 add_idea = ARS_glory_of_old4 }
 		}
 	}
 	focus = {
@@ -545,14 +569,14 @@ focus_tree = {
 		prerequisite = { focus = ARS_trust_the_state }
 		prerequisite = { focus = ARS_arstotzkan_nationals_return }
 		mutually_exclusive = { focus = ARS_back_to_old_traditions focus = ARS_arstotzkan_liberalization focus = ARS_secure_the_motherland }
-		x = 7
+		x = 9
 		y = 2
 		cost = 10
 		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_ideas = nationalism
+			swap_ideas = { remove_idea = ARS_trust_the_state add_idea = ARS_nationalist_state }
 			
 			add_popularity = {
 					ideology = fascism
@@ -564,7 +588,7 @@ focus_tree = {
 		id = ARS_arstotzkan_militarism
 		icon = GFX_goal_extensive_conscription_fascism
 		prerequisite = { focus = ARS_national_socialism }
-		x = 6
+		x = 8
 		y = 3
 		cost = 10
 		
@@ -583,7 +607,7 @@ focus_tree = {
 		id = ARS_propaganda_ministry
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ARS_arstotzkan_militarism }
-		x = 6
+		x = 8
 		y = 4
 		cost = 10
 		
@@ -597,7 +621,7 @@ focus_tree = {
 		id = ARS_preparations_for_revenge
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = ARS_national_socialism }
-		x = 8
+		x = 10
 		y = 3
 		cost = 10
 		
@@ -653,7 +677,7 @@ focus_tree = {
 		id = ARS_kolechias_downfall
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = ARS_preparations_for_revenge }
-		x = 8
+		x = 10
 		y = 4
 		cost = 2
 		
@@ -689,8 +713,8 @@ focus_tree = {
 		id = ARS_intimidate_the_neighbours
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ARS_kolechias_downfall }
-		x = 8
-		y = 5
+		x = 10
+		y = 6
 		cost = 15
 		
 		available_if_capitulated = yes
@@ -710,111 +734,22 @@ focus_tree = {
 
 			army_experience = 25
 			
-			if = {
-				limit = {
-					country_exists = ANT
-					ANT = {
-						OR = {
-							owns_state = 206
-							owns_state = 204
-							owns_state = 194
-							owns_state = 241
-							owns_state = 243
-							owns_state = 224
-						}
-					}
+			ANT = {
+				every_unit_leader = {
+					set_nationality = ARS
 				}
 			}
-			if = {
-				limit = {
-					206 = {
-						owner = {
-							NOT = {
-								tag = ANT
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 206
+			annex_country = {
+			    target = ANT
+			    transfer_troops = yes
 			}
-			if = {
+			every_state = {
 				limit = {
-					204 = {
-						owner = {
-							NOT = {
-								tag = ANT
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
+					is_core_of = ANT
 				}
-				add_state_core = 204
+				add_core_of = ARS
 			}
-			if = {
-				limit = {
-					194 = {
-						owner = {
-							NOT = {
-								tag = ANT
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 194
-			}
-			if = {
-				limit = {
-					241 = {
-						owner = {
-							NOT = {
-								tag = ANT
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 241
-			}
-			if = {
-				limit = {
-					243 = {
-						owner = {
-							NOT = {
-								tag = ANT
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 243
-			}
-			if = {
-				limit = {
-					224 = {
-						owner = {
-							NOT = {
-								tag = ANT
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 224
-			}
+
 			create_wargoal = {
 						type = take_state_focus
 						target = IMP
@@ -831,9 +766,6 @@ focus_tree = {
 			REP = {
 				add_opinion_modifier = { target = ARS modifier = ARS_arstotzkan_provocation }
 			}
-			ANT = {
-				add_opinion_modifier = { target = ARS modifier = ARS_arstotzkan_provocation }
-			}
 			OBR = {
 				add_opinion_modifier = { target = ARS modifier = ARS_arstotzkan_provocation }
 			}
@@ -846,20 +778,24 @@ focus_tree = {
 		id = ARS_dominate_the_plains
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ARS_intimidate_the_neighbours }
-		x = 8
-		y = 6
+		x = 10
+		y = 7
 		cost = 15
 		
 		available_if_capitulated = yes
 		
 		completion_reward = {
 			add_state_claim = 78
+			add_state_claim = 766
 			add_state_claim = 192
 			add_state_claim = 198
 			add_state_claim = 199
 			add_state_claim = 91
 			add_state_claim = 93
 			add_state_claim = 94
+			add_state_claim = 95
+			add_state_claim = 96
+			add_state_claim = 784
 			add_state_claim = 207
 			add_state_claim = 210
 			add_state_claim = 242
@@ -887,8 +823,8 @@ focus_tree = {
 		id = ARS_demand_the_baltic_states
 		icon = GFX_goal_SOV_baltic_aggression
 		prerequisite = { focus = ARS_dominate_the_plains }
-		x = 8
-		y = 7
+		x = 10
+		y = 8
 		cost = 10
 		
 		available_if_capitulated = no
@@ -919,14 +855,14 @@ focus_tree = {
 		prerequisite = { focus = ARS_trust_the_state }
 		prerequisite = { focus = ARS_arstotzkan_nationals_return }
 		mutually_exclusive = { focus = ARS_back_to_old_traditions focus = ARS_arstotzkan_liberalization focus = ARS_national_socialism }
-		x = 11
+		x = 13
 		y = 2
 		cost = 10
 		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_ideas = workers_of_the_world_unite_idea
+			swap_ideas = { remove_idea = ARS_trust_the_state add_idea = ARS_communist_state }
 			add_political_power = 150
 		}
 	}
@@ -934,7 +870,7 @@ focus_tree = {
 		id = ARS_ban_free_speech
 		icon = GFX_focus_propaganda_soviet
 		prerequisite = { focus = ARS_secure_the_motherland }
-		x = 10
+		x = 12
 		y = 3
 		cost = 10
 		
@@ -948,7 +884,7 @@ focus_tree = {
 		id = ARS_empower_the_state
 		icon = GFX_goal_support_fourth_int
 		prerequisite = { focus = ARS_ban_free_speech }
-		x = 10
+		x = 12
 		y = 4
 		cost = 5
 		
@@ -965,7 +901,7 @@ focus_tree = {
 		id = ARS_patriotic_volunteers
 		icon = GFX_goal_extensive_conscription_communism
 		prerequisite = { focus = ARS_secure_the_motherland }
-		x = 12
+		x = 14
 		y = 3
 		cost = 10
 		
@@ -979,7 +915,7 @@ focus_tree = {
 		id = ARS_political_officers
 		icon = GFX_goal_secret_police_red
 		prerequisite = { focus = ARS_patriotic_volunteers }
-		x = 12
+		x = 14
 		y = 4
 		cost = 5
 		
@@ -993,8 +929,8 @@ focus_tree = {
 		id = ARS_incite_the_kolechians
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = ARS_political_officers }
-		x = 12
-		y = 5
+		x = 14
+		y = 6
 		cost = 5
 		
 		available_if_capitulated = yes
@@ -1019,14 +955,28 @@ focus_tree = {
 				UNF = {
 					add_opinion_modifier = { target = ARS modifier = ARS_police_crackdowns }
 				}
+					228 = {
+						damage_building = {
+							type = infrastructure
+							damage = 4
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 2
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 2
+						}
+					}
 		}
 	}
 	focus = {
 		id = ARS_death_to_kolechia
-		icon = GFX_ARS_DESTROY
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = ARS_incite_the_kolechians }
-		x = 12
-		y = 6
+		x = 14
+		y = 7
 		cost = 10
 		
 		available_if_capitulated = yes
@@ -1054,8 +1004,8 @@ focus_tree = {
 		id = ARS_glorious_liberation
 		icon = GFX_goal_communist_brigades
 		prerequisite = { focus = ARS_death_to_kolechia }
-		x = 12
-		y = 7
+		x = 14
+		y = 8
 		cost = 15
 		
 		available_if_capitulated = yes
@@ -1074,12 +1024,16 @@ focus_tree = {
 			add_state_claim = 243
 			add_state_claim = 224
 			add_state_claim = 78
+			add_state_claim = 766
 			add_state_claim = 192
 			add_state_claim = 198
 			add_state_claim = 199
 			add_state_claim = 91
 			add_state_claim = 93
 			add_state_claim = 94
+			add_state_claim = 95
+			add_state_claim = 96
+			add_state_claim = 784
 			add_state_claim = 207
 			add_state_claim = 210
 			add_state_claim = 242
@@ -1139,9 +1093,36 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ARS_ministry_of_the_occupied_zones
+		icon = GFX_sca_focus_communist_pride
+			available = {
+					OR = {
+						date > 1937.1.1
+						threat > 0.1 
+						has_war = yes
+					}
+			}
+		x = 24
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+				set_rule = {
+					can_create_factions = yes
+					can_boost_other_ideologies = yes
+				}
+		}
+	}
+	focus = {
 		id = ARS_kolechia_annexed
-		icon = GFX_ARS_DESTROY
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ARS_ministry_of_the_occupied_zones }
 		available = {
+				NOT = {
+						country_exists = KOL
+					}
 			is_puppet = no
 			owns_state = 196
 			owns_state = 200
@@ -1154,8 +1135,8 @@ focus_tree = {
 			owns_state = 222
 			owns_state = 223
 		}
-		x = 16
-		y = 0
+		x = 21
+		y = 1
 		cost = 5
 		
 		completion_reward = {
@@ -1165,218 +1146,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ARS_glory_to_arstotzka
-		icon = GFX_ARS_Rule
-		prerequisite = { focus = ARS_kolechia_annexed }
-		prerequisite = { focus = ARS_cobrastan_referendum }
-		available = {
-			is_puppet = no
-			controls_state = 200
-			controls_state = 226
-			controls_state = 259
-			controls_state = 221
-			controls_state = 225
-			controls_state = 240
-			controls_state = 220
-			controls_state = 222
-			controls_state = 223
-			controls_state = 203
-			controls_state = 197
-			controls_state = 201
-			controls_state = 202
-			controls_state = 193
-			controls_state = 206
-			controls_state = 204
-			controls_state = 194
-			controls_state = 241
-			controls_state = 243
-			controls_state = 224
-			controls_state = 78
-			controls_state = 192
-			controls_state = 198
-			controls_state = 199
-			controls_state = 91
-			controls_state = 93
-			controls_state = 94
-			controls_state = 207
-			controls_state = 210
-			controls_state = 242
-			controls_state = 246
-			controls_state = 205
-			controls_state = 219
-			controls_state = 247
-			controls_state = 248
-			controls_state = 253
-			controls_state = 254
-				OR = {
-					ARS = {
-						controls_state = 196
-					}
-				OR = {
-						COB = {
-							controls_state = 196
-						}
-					}
-				}
-		}
-		x = 22
-		y = 0
-		cost = 5
-		
-		available_if_capitulated = no
-		
-		completion_reward = {
-			add_ideas = ARS_arstotzkan_glory
-		}
-	}
-	focus = {
-		id = ARS_Proclaim_Greater_Arstotzka
-		icon = GFX_focus_ger_great_red_menace
-		prerequisite = { focus = ARS_kolechia_annexed }
-		prerequisite = { focus = ARS_glory_to_arstotzka }
-		prerequisite = { focus = ARS_cobrastan_referendum }
-		available = {
-			is_puppet = no
-			controls_state = 200
-			controls_state = 226
-			controls_state = 259
-			controls_state = 221
-			controls_state = 225
-			controls_state = 240
-			controls_state = 220
-			controls_state = 222
-			controls_state = 223
-			controls_state = 203
-			controls_state = 197
-			controls_state = 201
-			controls_state = 202
-			controls_state = 193
-			controls_state = 206
-			controls_state = 204
-			controls_state = 194
-			controls_state = 241
-			controls_state = 243
-			controls_state = 224
-			controls_state = 78
-			controls_state = 192
-			controls_state = 198
-			controls_state = 199
-			controls_state = 91
-			controls_state = 93
-			controls_state = 94
-			controls_state = 207
-			controls_state = 210
-			controls_state = 242
-			controls_state = 246
-			controls_state = 205
-			controls_state = 219
-			controls_state = 247
-			controls_state = 248
-			controls_state = 253
-			controls_state = 254
-				OR = {
-					ARS = {
-						controls_state = 196
-					}
-				OR = {
-						COB = {
-							controls_state = 196
-						}
-					}
-				}
-		}
-		x = 22
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = ARS_occupation_instability
-			add_state_core = 196
-			add_state_core = 200
-			add_state_core = 226
-			add_state_core = 259
-			add_state_core = 221
-			add_state_core = 225
-			add_state_core = 220
-			add_state_core = 222
-			add_state_core = 223
-			add_state_core = 203
-			add_state_core = 197
-			add_state_core = 201
-			add_state_core = 202
-			add_state_core = 193
-			add_state_core = 206
-			add_state_core = 204
-			add_state_core = 194
-			add_state_core = 241
-			add_state_core = 243
-			add_state_core = 224
-			add_state_core = 78
-			add_state_core = 192
-			add_state_core = 198
-			add_state_core = 199
-			add_state_core = 91
-			add_state_core = 93
-			add_state_core = 94
-			add_state_core = 207
-			add_state_core = 210
-			add_state_core = 242
-			add_state_core = 246
-			add_state_core = 205
-			add_state_core = 219
-			add_state_core = 247
-			add_state_core = 248
-			add_state_core = 253
-			add_state_core = 254
-			add_research_slot = 1
-			army_experience = -25
-		}
-	}
-	focus = {
-		id = ARS_Consolidate_Greater_Arstotzka
-		icon = GFX_r56_focus_commie_investments
-		prerequisite = { focus = ARS_Proclaim_Greater_Arstotzka }
-		x = 22
-		y = 2
-		cost = 15
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			remove_ideas = ARS_occupation_instability
-			add_ideas = ARS_entrenched_occupation
-		}
-	}
-	focus = {
-		id = ARS_Formalize_Greater_Arstotzka
-		icon = GFX_focus_prc_agrarian_socialism
-		prerequisite = { focus = ARS_Consolidate_Greater_Arstotzka }
-		x = 22
-		y = 3
-		cost = 15
-		
-		available_if_capitulated = yes
-		
-		
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			remove_ideas = ARS_entrenched_occupation
-			add_ideas = ARS_accepted_occupation
-		}
-	}
-	focus = {
 		id = ARS_mobilize_the_people
-		icon = GFX_ARS_Soldier
-		x = 35
-		y = 0
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = ARS_ministry_of_labor }
+		prerequisite = { focus = ARS_ministry_of_propaganda }
+		x = 37
+		y = 1
 		cost = 10
 		
 		available_if_capitulated = yes
@@ -1389,8 +1164,9 @@ focus_tree = {
 	focus = {
 		id = ARS_the_truth_of_arstotzka
 		icon = GFX_goal_generic_propaganda
-		x = 37
-		y = 0
+		prerequisite = { focus = ARS_ministry_of_propaganda }
+		x = 39
+		y = 1
 		cost = 5
 		
 		available_if_capitulated = yes
@@ -1404,8 +1180,8 @@ focus_tree = {
 		id = ARS_the_fardesto_mine
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = ARS_fortify_the_border focus = ARS_mobilize_the_people focus = ARS_the_truth_of_arstotzka }
-		x = 32
-		y = 1
+		x = 34
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1432,8 +1208,8 @@ focus_tree = {
 		id = ARS_nirsk_petrochemical
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ARS_the_fardesto_mine }
-		x = 32
-		y = 2
+		x = 34
+		y = 3
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1461,8 +1237,8 @@ focus_tree = {
 		id = ARS_ears_of_the_nation
 		icon = GFX_goal_generic_radar
 		prerequisite = { focus = ARS_fortify_the_border focus = ARS_mobilize_the_people focus = ARS_the_truth_of_arstotzka }
-		x = 38
-		y = 1
+		x = 40
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1487,8 +1263,8 @@ focus_tree = {
 		id = ARS_develop_the_south
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ARS_fortify_the_border focus = ARS_mobilize_the_people focus = ARS_the_truth_of_arstotzka }
-		x = 34
-		y = 1
+		x = 36
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1528,8 +1304,8 @@ focus_tree = {
 		id = ARS_develop_the_north
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ARS_develop_the_south }
-		x = 34
-		y = 2
+		x = 36
+		y = 3
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1569,8 +1345,8 @@ focus_tree = {
 		id = ARS_state_run_education
 		icon = GFX_goal_communist_brain
 		prerequisite = { focus = ARS_fortify_the_border focus = ARS_mobilize_the_people focus = ARS_the_truth_of_arstotzka }
-		x = 36
-		y = 1
+		x = 38
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1583,8 +1359,8 @@ focus_tree = {
 		id = ARS_state_sponsored_engineers
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = ARS_state_run_education }
-		x = 36
-		y = 2
+		x = 38
+		y = 3
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1597,8 +1373,8 @@ focus_tree = {
 		id = ARS_state_controlled_manufacturing
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ARS_ears_of_the_nation }
-		x = 38
-		y = 2
+		x = 40
+		y = 3
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1609,10 +1385,10 @@ focus_tree = {
 	}
 	focus = {
 		id = ARS_first_three_years_plan
-		icon = GFX_labour
+		icon = GFX_goal_communist_factories
 		prerequisite = { focus = ARS_nirsk_petrochemical focus = ARS_develop_the_north focus = ARS_state_sponsored_engineers focus = ARS_state_controlled_manufacturing }
-		x = 35
-		y = 3
+		x = 37
+		y = 4
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1656,8 +1432,8 @@ focus_tree = {
 		id = ARS_second_three_years_plan
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = ARS_first_three_years_plan }
-		x = 35
-		y = 4
+		x = 37
+		y = 5
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1701,8 +1477,8 @@ focus_tree = {
 		id = ARS_the_six_year_plan
 		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = ARS_second_three_years_plan }
-		x = 35
-		y = 5
+		x = 37
+		y = 6
 		cost = 15
 		
 		available_if_capitulated = no
@@ -1778,8 +1554,8 @@ focus_tree = {
 		id = ARS_self_sufficient_motherland
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = ARS_the_six_year_plan }
-		x = 35
-		y = 6
+		x = 37
+		y = 7
 		cost = 15
 		
 		available_if_capitulated = no
@@ -1853,9 +1629,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ARS_ministry_of_security
+		icon = GFX_focus_generic_military_mission
+		available = {
+			OR = {
+				date > 1938.1.1
+				threat > 0.2
+			}
+		}
+
+		x = 46
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = ARS_cobrastan_referendum
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = ARS_kolechia_annexed }
+		prerequisite = { focus = ARS_ministry_of_security }
+		available = {
+				has_completed_focus = ARS_kolechia_annexed
+		}
+
 		available = {
 			is_puppet = no
 			owns_state = 196
@@ -1869,15 +1668,14 @@ focus_tree = {
 			owns_state = 222
 			owns_state = 223
 		}
-		x = 26
-		y = 0
+		x = 46
+		y = 1
 		cost = 2
 		
 		available_if_capitulated = no
 		
 		completion_reward = {
 			add_ideas = ARS_cobrastan_question
-			add_manpower = -10000
 		}
 	}
 	focus = {
@@ -1885,8 +1683,15 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = ARS_cobrastan_referendum }
 		mutually_exclusive = { focus = ARS_cobrastan_resolved focus = ARS_cobrastan_ignored }
-		x = 24
-		y = 1
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+
+		x = 44
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1894,7 +1699,13 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = ARS_cobrastan_question
 			add_stability = 0.1
-			add_manpower = -10000
+
+			remove_state_claim = 196
+			remove_state_claim = 137
+			remove_state_claim = 234
+			remove_state_core = 196
+			remove_state_core = 137
+			remove_state_core = 234
 			
 			COB = { transfer_state = 196 }
 			COB = { transfer_state = 137 }
@@ -1946,8 +1757,8 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = ARS_cobrastan_referendum }
 		mutually_exclusive = { focus = ARS_cobrastan_released focus = ARS_cobrastan_ignored }
-		x = 26
-		y = 1
+		x = 46
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
@@ -1955,10 +1766,13 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = ARS_cobrastan_question
 			add_stability = 0.05
-			add_manpower = -10000
-			add_state_core = 196
-			add_state_core = 137
-			add_state_core = 234
+
+			remove_state_claim = 196
+			remove_state_claim = 137
+			remove_state_claim = 234
+			remove_state_core = 196
+			remove_state_core = 137
+			remove_state_core = 234
 			
 			add_popularity = {
 					ideology = democratic
@@ -2000,14 +1814,13 @@ focus_tree = {
 		id = ARS_cobrastan_coerced
 		icon = GFX_goal_crush_resistance
 		prerequisite = { focus = ARS_cobrastan_resolved }
-		x = 26
-		y = 2
+		x = 46
+		y = 3
 		cost = 10
 		
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_manpower = -10000
 			remove_ideas = ARS_illegal_immigration
 			swap_ideas = { remove_idea = ARS_papers_please add_idea = ARS_improved_papers_please }
 				COB = {
@@ -2020,8 +1833,15 @@ focus_tree = {
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = ARS_cobrastan_referendum }
 		mutually_exclusive = { focus = ARS_cobrastan_released focus = ARS_cobrastan_resolved }
-		x = 28
-		y = 1
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+
+		x = 48
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
@@ -2030,9 +1850,11 @@ focus_tree = {
 			add_timed_idea = {
 				idea = ARS_cobrastan_natives_protest
 				days = 365
+			}
+
 			add_stability = -0.05
 			add_war_support = -0.05
-			}
+			MONTHLY_POPULATION = -0.01
 
 			add_popularity = {
 					ideology = democratic
@@ -2044,8 +1866,8 @@ focus_tree = {
 		id = ARS_cobrastani_exploitation
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ARS_cobrastan_ignored }
-		x = 28
-		y = 2
+		x = 48
+		y = 3
 		cost = 12
 		
 		available_if_capitulated = no
@@ -2079,9 +1901,9 @@ focus_tree = {
 	focus = {
 		id = ARS_kolechian_consolidation
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = ARS_kolechia_annexed }
-		x = 16
-		y = 1
+		prerequisite = { focus = ARS_deploy_police_commandos }
+		x = 19
+		y = 4
 		cost = 10
 		
 		available_if_capitulated = no
@@ -2163,8 +1985,8 @@ focus_tree = {
 		id = ARS_kolechian_exploitation
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ARS_kolechian_consolidation }
-		x = 16
-		y = 2
+		x = 19
+		y = 5
 		cost = 10
 		
 		available_if_capitulated = no
@@ -2184,10 +2006,10 @@ focus_tree = {
 	}
 	focus = {
 		id = ARS_kolechian_development
-		icon = GFX_labour
+		icon = GFX_goal_communist_factories
 		prerequisite = { focus = ARS_kolechian_exploitation }
-		x = 16
-		y = 3
+		x = 19
+		y = 6
 		cost = 10
 		
 		available_if_capitulated = no
@@ -2212,9 +2034,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ARS_develop_the_neighbours
-		icon = GFX_labour
-		prerequisite = { focus = ARS_kolechia_annexed }
+		id = ARS_imrean_region_occupied
+		icon = GFX_goal_centralize_power
+		prerequisite = { focus = ARS_ministry_of_the_occupied_zones }
 		available = {
 			is_puppet = no
 			controls_state = 201
@@ -2239,8 +2061,46 @@ focus_tree = {
 					}
 				}
 		}
-		x = 18
+
+		x = 26
 		y = 1
+		cost = 5
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ARS_develop_the_imrean_region
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ARS_imrean_region_occupied }
+		available = {
+			is_puppet = no
+			controls_state = 201
+			controls_state = 202
+			controls_state = 193
+			controls_state = 206
+			controls_state = 204
+			controls_state = 194
+			controls_state = 241
+			controls_state = 243
+			controls_state = 224
+				OR = {
+					ARS = {
+						controls_state = 203
+						controls_state = 197
+					}
+				OR = {
+						COB = {
+							controls_state = 203
+							controls_state = 197
+						}
+					}
+				}
+		}
+		x = 26
+		y = 2
 		cost = 15
 		
 		available_if_capitulated = no
@@ -2398,11 +2258,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ARS_develop_the_nothern_plains
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = ARS_kolechia_annexed }
+		id = ARS_obristan_occupied
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = ARS_ministry_of_the_occupied_zones }
 		available = {
 			is_puppet = no
+			controls_state = 95
+			controls_state = 96
+			controls_state = 784
 			controls_state = 207
 			controls_state = 210
 			controls_state = 242
@@ -2414,13 +2277,63 @@ focus_tree = {
 			controls_state = 253
 			controls_state = 254
 		}
-		x = 19
+		x = 28
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ARS_develop_the_nothern_plains
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = ARS_obristan_occupied }
+		available = {
+			is_puppet = no
+			controls_state = 95
+			controls_state = 96
+			controls_state = 784
+			controls_state = 207
+			controls_state = 210
+			controls_state = 242
+			controls_state = 246
+			controls_state = 205
+			controls_state = 219
+			controls_state = 247
+			controls_state = 248
+			controls_state = 253
+			controls_state = 254
+		}
+		x = 28
 		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
 		
 		completion_reward = {
+			95 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			96 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			784 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			207 = {
 			add_building_construction = {
 					type = infrastructure
@@ -2509,12 +2422,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ARS_develop_the_western_plains
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = ARS_kolechia_annexed }
+		id = ARS_united_federation_occupied
+		icon = GFX_goal_chain_liberty
+		prerequisite = { focus = ARS_ministry_of_the_occupied_zones }
 		available = {
 			is_puppet = no
 			controls_state = 78
+			controls_state = 766
 			controls_state = 192
 			controls_state = 198
 			controls_state = 199
@@ -2522,14 +2436,45 @@ focus_tree = {
 			controls_state = 93
 			controls_state = 94
 		}
-		x = 20
+		x = 30
 		y = 1
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ARS_develop_the_western_plains
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = ARS_united_federation_occupied }
+		available = {
+			is_puppet = no
+			controls_state = 78
+			controls_state = 766
+			controls_state = 192
+			controls_state = 198
+			controls_state = 199
+			controls_state = 91
+			controls_state = 93
+			controls_state = 94
+		}
+		x = 30
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
 		
 		completion_reward = {
 			78 = {
+			add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			766 = {
 			add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2596,9 +2541,143 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ARS_neighbour_volunteers
+		id = ARS_imrean_volunteers
 		icon = GFX_goal_manpower
-		prerequisite = { focus = ARS_develop_the_neighbours }
+		prerequisite = { focus = ARS_develop_the_imrean_region }
+		x = 26
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			197 = { add_manpower = -30000 }
+			203 = { add_manpower = -10000 }
+			193 = { add_manpower = -20000 }
+			202 = { add_manpower = -20000 }
+			243 = { add_manpower = -20000 }
+			add_manpower = 100000
+				add_timed_idea = {
+						idea = ARS_imrean_volunteer_influx
+						days = 180
+				}
+		}
+	}
+	focus = {
+		id = ARS_obristan_volunteers
+		icon = GFX_goal_manpower
+		prerequisite = { focus = ARS_develop_the_nothern_plains }
+		x = 28
+		y = 3
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			219 = { add_manpower = -100000 }
+			add_manpower = 100000
+				add_timed_idea = {
+						idea = ARS_obristan_volunteer_influx
+						days = 180
+				}
+		}
+	}
+	focus = {
+		id = ARS_united_federation_volunteers
+		icon = GFX_goal_manpower
+		prerequisite = { focus = ARS_develop_the_western_plains }
+		x = 30
+		y = 3
+		cost = 5
+
+		available_if_capitulated = no
+		
+		completion_reward = {
+			91 = { add_manpower = -100000 }
+			add_manpower = 100000
+				add_timed_idea = {
+						idea = ARS_united_federation_volunteer_influx
+						days = 180
+				}
+		}
+	}
+	focus = {
+		id = ARS_kolechian_demilitarization
+		icon = GFX_goal_MAN_confront_gorillas
+		prerequisite = { focus = ARS_kolechia_annexed }
+		mutually_exclusive = { focus = ARS_kolechian_partition focus = ARS_kolechian_guidance focus = ARS_kolechia_occupied }
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+
+		x = 18
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+
+			swap_ideas = { remove_idea = ARS_kolechia_vanquished add_idea = ARS_kolechia_stabilized1 }
+
+			add_stability = 0.1
+			add_war_support = 0.1
+
+				223 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+				222 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+				220 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+				225 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+				259 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+				221 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+				226 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+				200 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+				196 = {
+					add_state_modifier = { 
+						modifier = { local_non_core_manpower = -1.0 } 
+					}
+				}
+		}
+	}
+	focus = {
+		id = ARS_deploy_police_commandos
+		icon = GFX_goal_mexico_quarantine_migrants
+		prerequisite = { focus = ARS_kolechian_demilitarization }
 		x = 18
 		y = 3
 		cost = 10
@@ -2606,42 +2685,259 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = { remove_idea = ARS_kolechia_stabilized1 add_idea = ARS_kolechia_stabilized2 }
 		}
 	}
 	focus = {
-		id = ARS_obristan_volunteers
-		icon = GFX_ARS_Soldier
-		prerequisite = { focus = ARS_develop_the_nothern_plains }
-		x = 19
-		y = 4
+		id = ARS_kolechian_partition
+		icon = GFX_goal_BUL_divide_yugoslavia
+		prerequisite = { focus = ARS_kolechia_annexed }
+		mutually_exclusive = { focus = ARS_kolechian_demilitarization focus = ARS_kolechian_guidance focus = ARS_kolechia_occupied }
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+
+		x = 22
+		y = 2
 		cost = 10
 		
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = { remove_idea = ARS_kolechia_vanquished add_idea = ARS_kolechia_partitioned }
 		}
 	}
 	focus = {
-		id = ARS_united_federation_volunteers
-		icon = GFX_goal_manpower
-		prerequisite = { focus = ARS_develop_the_western_plains }
+		id = ARS_kolechian_guidance
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = ARS_kolechia_annexed }
+		mutually_exclusive = { focus = ARS_kolechian_demilitarization focus = ARS_kolechian_partition focus = ARS_kolechia_occupied }
+
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+
+		x = 24
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+
+			swap_ideas = { remove_idea = ARS_kolechia_vanquished add_idea = ARS_kolechia_mentored }
+
+			KOL = { transfer_state = 223 }
+			KOL = { transfer_state = 222 }
+			KOL = { transfer_state = 220 }
+			KOL = { transfer_state = 225 }
+			KOL = { transfer_state = 259 }
+			KOL = { transfer_state = 221 }
+			KOL = { transfer_state = 226 }
+			KOL = { transfer_state = 200 }
+			
+			puppet = KOL
+			
+			set_autonomy = {
+				target = KOL
+				autonomous_state = autonomy_supervised_state
+				freedom_level = 0.65
+			}
+			
+			diplomatic_relation = {
+				country = KOL
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = KOL
+				relation = guarantee
+				active = yes
+			}
+		}
+	}
+	focus = {
+		id = ARS_kolechia_occupied
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = ARS_kolechia_annexed }
+		mutually_exclusive = { focus = ARS_kolechian_demilitarization focus = ARS_kolechian_partition focus = ARS_kolechian_guidance }
 		x = 20
-		y = 3
+		y = 2
 		cost = 10
+		
 		available_if_capitulated = no
 		
 		completion_reward = {
+			swap_ideas = { remove_idea = ARS_kolechia_vanquished add_idea = ARS_kolechia_occupied1 }
+		}
+	}
+	focus = {
+		id = ARS_ministry_of_justice
+		icon = GFX_goal_mexico_become_industrialised
+			available = {
+					OR = {
+						date > 1938.1.1
+						threat > 0.2
+						has_war = yes
+					NOT = {
+							country_exists = KOL
+						}
+					}
+			}
+
+		x = 52
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ARS_glory_to_arstotzka
+		icon = GFX_goal_communist_revolt
+		prerequisite = { focus = ARS_ministry_of_justice }
+		available = {
+			has_war = no
+			is_puppet = no
+			controls_state = 240
+			owns_state = 240
+				KOL = {
+					exists = no
+				}
+		}
+
+		x = 52
+		y = 1
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = ARS_arstotzkan_glory
+		}
+	}
+	focus = {
+		id = ARS_Proclaim_Greater_Arstotzka
+		icon = GFX_focus_ger_great_red_menace
+		prerequisite = { focus = ARS_glory_to_arstotzka }
+		available = {
+			is_puppet = no
+			controls_state = 200
+			controls_state = 226
+			controls_state = 259
+			controls_state = 221
+			controls_state = 225
+			controls_state = 240
+			controls_state = 220
+			controls_state = 222
+			controls_state = 223
+			controls_state = 203
+			controls_state = 197
+			controls_state = 201
+			controls_state = 202
+			controls_state = 193
+			controls_state = 206
+			controls_state = 204
+			controls_state = 194
+			controls_state = 241
+			controls_state = 243
+			controls_state = 224
+			controls_state = 78
+			controls_state = 766
+			controls_state = 192
+			controls_state = 198
+			controls_state = 199
+			controls_state = 91
+			controls_state = 93
+			controls_state = 94
+			controls_state = 95
+			controls_state = 96
+			controls_state = 784
+			controls_state = 207
+			controls_state = 210
+			controls_state = 242
+			controls_state = 246
+			controls_state = 205
+			controls_state = 219
+			controls_state = 247
+			controls_state = 248
+			controls_state = 253
+			controls_state = 254
+				OR = {
+					ARS = {
+						controls_state = 196
+					}
+				OR = {
+						COB = {
+							controls_state = 196
+						}
+					}
+				}
+		}
+		x = 52
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ARS_occupation_instability
+			add_research_slot = 1
+			army_experience = -25
+		}
+	}
+	focus = {
+		id = ARS_Consolidate_Greater_Arstotzka
+		icon = GFX_r56_focus_commie_investments
+		prerequisite = { focus = ARS_Proclaim_Greater_Arstotzka }
+		x = 52
+		y = 3
+		cost = 15
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = ARS_occupation_instability
+			add_ideas = ARS_entrenched_occupation
+		}
+	}
+	focus = {
+		id = ARS_Formalize_Greater_Arstotzka
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = { focus = ARS_Consolidate_Greater_Arstotzka }
+		x = 52
+		y = 4
+		cost = 15
+		
+		available_if_capitulated = yes
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = ARS_entrenched_occupation
+			add_ideas = ARS_accepted_occupation
 		}
 	}
 	focus = {
 		id = ARS_arstotzkan_valor
-		icon = GFX_Focus_ARS_1
-		prerequisite = { focus = ARS_kolechian_development }
-		prerequisite = { focus = ARS_neighbour_volunteers }
-		prerequisite = { focus = ARS_obristan_volunteers }
-		prerequisite = { focus = ARS_united_federation_volunteers }
+		icon = GFX_goal_iron_people
 		prerequisite = { focus = ARS_Formalize_Greater_Arstotzka }
-		x = 19
+		x = 52
 		y = 5
 		cost = 10
 		
