@@ -1,0 +1,14 @@
+#################
+#### ARSTOTZKA ####
+#################
+
+ARS_KolechiaPuppets = {
+	
+	allowed = {
+		original_tag = ARS
+	}
+
+	visible = {
+		country_exists = ARS
+	}
+}
