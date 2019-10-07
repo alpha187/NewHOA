@@ -1,0 +1,184 @@
+ARS_KolechiaPuppets = {
+	ARS_North_Kolechia = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			#has_completed_focus = 
+			controls_state = 223
+			controls_state = 222
+			controls_state = 240
+			controls_state = 220
+			controls_state = 225
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+			}
+		}
+
+		visible = {
+			ARS = exists
+			NOT = { exists = KOL }
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = KOL
+				}
+				hidden_effect = {
+					NKO = {
+						set_state_owner = 223
+						set_state_owner = 222
+						set_state_owner = 240
+						set_state_owner = 220
+						set_state_owner = 225
+					}
+				}
+				#NOR = {
+					#start_civil_war = { ideology = fascism size = 1 }
+				#}
+				random_country = {
+					limit= {
+						original_tag = NKO
+						has_government = communism
+					}
+					transfer_state = 223
+					transfer_state = 222
+					transfer_state = 240
+					transfer_state = 220
+					transfer_state = 225 
+					NKO = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+					}
+					set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = ""
+						desc = ""
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = communism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				NKO = {
+					transfer_state = 223
+					transfer_state = 222
+					transfer_state = 240
+					transfer_state = 220
+					transfer_state = 225
+					set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = ""
+						desc = ""
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = communism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = NKO autonomy_state = autonomy_puppet }
+			}
+		}
+	}
+
+	ARS_South_Kolechia = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			#has_completed_focus = 
+			controls_state = 259
+			controls_state = 221
+			controls_state = 226
+			controls_state = 200
+			controls_state = 196
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+			}
+		}
+
+		visible = {
+			ARS = exists
+			NOT = { exists = KOL }
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = KOL
+				}
+				hidden_effect = {
+					SKO = {
+						set_state_owner = 259
+						set_state_owner = 221
+						set_state_owner = 226
+						set_state_owner = 200
+						set_state_owner = 196
+					}
+				}
+				#NOR = {
+					#start_civil_war = { ideology = fascism size = 1 }
+				#}
+				random_country = {
+					limit= {
+						original_tag = SKO
+						has_government = communism
+					}
+					transfer_state = 259
+					transfer_state = 221
+					transfer_state = 226
+					transfer_state = 200
+					transfer_state = 196
+					SKO = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+					}
+					set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = ""
+						desc = ""
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = communism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				SKO = {
+					transfer_state = 259
+					transfer_state = 221
+					transfer_state = 226
+					transfer_state = 200
+					transfer_state = 196
+					set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = ""
+						desc = ""
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = communism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = NKO autonomy_state = autonomy_puppet }
+			}
+		}
+	}
