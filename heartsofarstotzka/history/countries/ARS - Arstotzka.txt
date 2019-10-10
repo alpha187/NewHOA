@@ -58,6 +58,29 @@ set_popularities = {
 		ARS_war_with_kolechia
 	}
 
+
+if = {
+	limit = {
+		OR = {
+			country_exists = ARS
+		}
+	}
+	set_autonomy = {
+		target = NKO
+		autonomous_state = autonomy_puppet
+	}
+
+if = {
+	limit = {
+		OR = {
+			country_exists = ARS
+		}
+	}
+	set_autonomy = {
+		target = SKO
+		autonomous_state = autonomy_puppet
+	}
+
 create_country_leader = {
 	name = "Sergei Vladovich"
 	desc = ""
