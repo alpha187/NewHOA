@@ -16,7 +16,7 @@ state={
 		}
 		add_core_of = KOL
 		add_core_of = ARS
-		add_core_of = NKO
+		#add_core_of = NKO
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 1
