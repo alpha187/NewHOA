@@ -568,12 +568,12 @@ OBR = {
 	color_ui = rgb { 183 0 0 }
 }
 NKO = {
-	color = rgb { 100 0 0 }
-	color_ui = rgb { 100 0 0 }
+	color = rgb { 32 32 32 }
+	color_ui = rgb { 32 32 32 }
 }
 SKO = {
-	color = rgb { 100 0 0 }
-	color_ui = rgb { 100 0 0 }
+	color = rgb { 64 64 64 }
+	color_ui = rgb { 64 64 64 }
 }
 SIB = {
 	color = rgb { 255 0 0 }
