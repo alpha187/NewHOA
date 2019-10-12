@@ -21,7 +21,7 @@ ARS_KolechiaPuppets = {
 		}
 
 		visible = {
-			ARS = exists
+			country_exists = ARS
 			NOT = { exists = KOL }
 		}
 
@@ -56,16 +56,16 @@ ARS_KolechiaPuppets = {
 						puppet = PREV
 						set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
 					}
-					set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = ""
-						desc = ""
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism
-						traits = {
-						}
-					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					#create_country_leader = {
+					#	name = ""
+					#	desc = ""
+					#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					#	expire = "1965.1.1"
+					#	ideology = 
+					#	traits = {
+					#	}
+					#}
 				}
 			}
 			else = {
@@ -75,16 +75,16 @@ ARS_KolechiaPuppets = {
 					transfer_state = 240
 					transfer_state = 220
 					transfer_state = 225
-					set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = ""
-						desc = ""
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism
-						traits = {
-						}
-					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					#create_country_leader = {
+					#	name = ""
+					#	desc = ""
+					#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					#	expire = "1965.1.1"
+					#	ideology = 
+					#	traits = {
+					#	}
+					#}
 				}
 				set_autonomy = { target = NKO autonomy_state = autonomy_puppet }
 			}
@@ -113,7 +113,7 @@ ARS_KolechiaPuppets = {
 		}
 
 		visible = {
-			ARS = exists
+			country_exists = ARS
 			NOT = { exists = KOL }
 		}
 
@@ -148,16 +148,16 @@ ARS_KolechiaPuppets = {
 						puppet = PREV
 						set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
 					}
-					set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = ""
-						desc = ""
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism
-						traits = {
-						}
-					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					#create_country_leader = {
+					#	name = ""
+					#	desc = ""
+					#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					#	expire = "1965.1.1"
+					#	ideology = 
+					#	#traits = {
+					#	#}
+					#}
 				}
 			}
 			else = {
@@ -167,16 +167,16 @@ ARS_KolechiaPuppets = {
 					transfer_state = 226
 					transfer_state = 200
 					transfer_state = 196
-					set_cosmetic_tag = NOR_reichskommissariat
-					create_country_leader = {
-						name = ""
-						desc = ""
-						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
-						expire = "1965.1.1"
-						ideology = communism
-						traits = {
-						}
-					}
+					#set_cosmetic_tag = NOR_reichskommissariat
+					#create_country_leader = {
+					#	name = ""
+					#	desc = ""
+					#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					#	expire = "1965.1.1"
+					#	ideology = 
+					#	#traits = {
+					#	#}
+					#}
 				}
 				set_autonomy = { target = NKO autonomy_state = autonomy_puppet }
 			}
