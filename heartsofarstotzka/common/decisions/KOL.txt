@@ -45,21 +45,23 @@
 			}
 
 		complete_effect = {
-			set_cosmetic_tag = KOL_united_kolechia
-			 223 = { add_core_of = ROOT }
-			 222 = { add_core_of = ROOT }
-			 240 = { add_core_of = ROOT }
-			 220 = { add_core_of = ROOT }
-			 225 = { add_core_of = ROOT }
-			 259 = { add_core_of = ROOT }
-			 221 = { add_core_of = ROOT }
-			 226 = { add_core_of = ROOT }
-			 200 = { add_core_of = ROOT }
-			 200 = { add_core_of = ROOT }
-			#set_province_name = { id = 6521 name = "Germania" }
-			hidden_effect = {
-				NKO = {set_cosmetic_tag = united_kolechia}
-				SKO = {set_cosmetic_tag = united_kolechia}
+				set_cosmetic_tag = KOL_united_kolechia
+				set_capital = 226
+			 	223 = { add_core_of = ROOT }
+			 	222 = { add_core_of = ROOT }
+			 	240 = { add_core_of = ROOT }
+			 	220 = { add_core_of = ROOT }
+			 	225 = { add_core_of = ROOT }
+			 	259 = { add_core_of = ROOT }
+			 	221 = { add_core_of = ROOT }
+			 	226 = { add_core_of = ROOT }
+			 	200 = { add_core_of = ROOT }
+			 	200 = { add_core_of = ROOT }
+				set_province_name = { id = 11437 name = "New Yurko City" }
+				hidden_effect = {
+					NKO = {set_cosmetic_tag = united_kolechia}
+					SKO = {set_cosmetic_tag = united_kolechia}
+					#set_global_flag = 
 			}
 		}
 	}
