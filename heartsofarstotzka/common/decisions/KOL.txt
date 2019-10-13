@@ -29,9 +29,9 @@
 
 		cost = 0
 		ai_will_do = {
-			factor = 200
+			factor = 0
 			modifier = {
-				factor = 0
+				add = 1
 				#is_historical_focus_on = yes
 			}
 		}
