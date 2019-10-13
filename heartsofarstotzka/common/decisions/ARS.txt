@@ -22,7 +22,7 @@ ARS_KolechiaPuppets = {
 
 		visible = {
 			country_exists = ARS
-			NOT = { exists = KOL }
+			NOT = { country_exists = KOL }
 		}
 
 		complete_effect = {
@@ -114,7 +114,7 @@ ARS_KolechiaPuppets = {
 
 		visible = {
 			country_exists = ARS
-			NOT = { exists = KOL }
+			NOT = { country_exists = KOL }
 		}
 
 		complete_effect = {

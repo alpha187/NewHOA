@@ -1,0 +1,66 @@
+﻿form_united_kolechia_category = {
+
+	form_united_kolechia = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = NKO
+				original_tag = SKO
+			}
+		}
+
+		available = {
+			#is_subject = no
+			controls_state = 223
+			controls_state = 222
+			controls_state = 240
+			controls_state = 220
+			controls_state = 225
+			controls_state = 259
+			controls_state = 221
+			controls_state = 226
+			controls_state = 200
+			controls_state = 196
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				#is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = NKO
+				original_tag = SKO
+				}
+			}
+
+		complete_effect = {
+			set_cosmetic_tag = KOL_united_kolechia
+			 223 = { add_core_of = ROOT }
+			 222 = { add_core_of = ROOT }
+			 240 = { add_core_of = ROOT }
+			 220 = { add_core_of = ROOT }
+			 225 = { add_core_of = ROOT }
+			 259 = { add_core_of = ROOT }
+			 221 = { add_core_of = ROOT }
+			 226 = { add_core_of = ROOT }
+			 200 = { add_core_of = ROOT }
+			 200 = { add_core_of = ROOT }
+			#set_province_name = { id = 6521 name = "Germania" }
+			hidden_effect = {
+				NKO = {set_cosmetic_tag = united_kolechia}
+				SKO = {set_cosmetic_tag = united_kolechia}
+			}
+		}
+	}
+}
