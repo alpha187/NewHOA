@@ -1,4 +1,4 @@
-name="Hearts of Arstotzka"
+﻿name="Hearts of Arstotzka"
 path="mod/heartsofarstotzka/"
 tags={
 	"Alternative History"
