@@ -49,13 +49,19 @@ set_popularities = {
 	neutrality = 0
 }
 
-create_country_leader = {
-	name = ""
-	desc = ""
-	picture = ""
-	expire = ""
-	ideology = 
-	#traits = {
-		#
-	#}
+diplomatic_relation = {
+	country = SKO
+	relation = military_access
+	active = no
 }
+
+#create_country_leader = {
+#	name = ""
+#	desc = ""
+#	picture = ""
+#	expire = ""
+#	ideology = 
+#	traits = {
+#		
+#	}
+#}

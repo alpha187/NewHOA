@@ -40,6 +40,10 @@ set_technology = {
 	set_convoys = 50
 	set_stability = 0.75
 
+	add_ideas = {
+		ARS_war_with_kolechia
+	}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1935.11.14"
@@ -54,32 +58,47 @@ set_popularities = {
 	neutrality = 10
 }
 
-	add_ideas = {
-		ARS_war_with_kolechia
-	}
-
-
 if = {
 	limit = {
-		OR = {
-			country_exists = ARS
-		}
+		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
 		target = NKO
 		autonomous_state = autonomy_puppet
 	}
+	else = {
+		puppet = NKO
+		NKO = {
+
+			set_politics = {
+				ruling_party = communism
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+
+			set_popularities = {
+				democratic = 0
+				fascism = 0
+				communism = 100
+				neutrality = 0
+			}
+		}
+	}
+}
 
 if = {
 	limit = {
-		OR = {
-			country_exists = ARS
-		}
+		has_dlc = "Together for Victory"
 	}
 	set_autonomy = {
 		target = SKO
 		autonomous_state = autonomy_puppet
 	}
+	else = {
+		puppet = SKO
+	}
+}
 
 create_country_leader = {
 	name = "Sergei Vladovich"
