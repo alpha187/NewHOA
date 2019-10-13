@@ -1,0 +1,8 @@
+﻿form_united_kolechia_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_hre
+
+	}
+}
