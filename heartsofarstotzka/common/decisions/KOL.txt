@@ -1,5 +1,4 @@
-﻿form_united_kolechia_category = {
-
+﻿form_unitedkolechia = {
 	form_united_kolechia = {
 
 		icon = generic_form_nation
