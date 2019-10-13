@@ -12,7 +12,7 @@
 		}
 
 		available = {
-			#is_subject = no
+			is_subject = no
 			controls_state = 223
 			controls_state = 222
 			controls_state = 240
