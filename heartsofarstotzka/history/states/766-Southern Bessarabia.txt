@@ -7,7 +7,7 @@ state=
 	state_category = rural
 	
 	history= {
-		#victory_points = {
+		victory_points = {
 		#	6727 1
 		}
 		add_core_of = MOL
@@ -15,9 +15,9 @@ state=
 		owner = UNF
 		buildings = {
 			infrastructure = 4
-			dockyard = 1
+			dockyard = 2
 			6727 = {
-				naval_base = 3
+				naval_base = 6
 			}
 		}
 		add_core_of = ROM
