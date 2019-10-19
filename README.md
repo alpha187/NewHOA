@@ -2,5 +2,5 @@ Hearts of Arstotzka is a Hearts of Iron IV mod where it adds the countries of Pa
 The current playable countries are: Arstotzka, Cobrastan.
 
 Planned Features:
-National Focuses for United Federation
+National Focuses for United Federation,
 Custom GFX for units
