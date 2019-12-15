@@ -44,25 +44,12 @@ set_technology = {
 		ARS_war_with_kolechia
 	}
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 5
-		}
-
-		fascism = {
-			popularity = 18
-		}
-		
-		communism = {
-			popularity = 67
-		}
-
-		neutrality = {
-			popularity = 10
-		}
-	}
+set_popularities = {
+	democratic = 5
+	fascism = 18
+	communism = 67
+	neutrality = 10
+}
 
 	ruling_party = communism
 	last_election = "1935.11.14"
