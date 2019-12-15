@@ -45,59 +45,34 @@ set_technology = {
 	}
 
 set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 5
+		}
+
+		fascism = {
+			popularity = 18
+		}
+		
+		communism = {
+			popularity = 67
+		}
+
+		neutrality = {
+			popularity = 10
+		}
+	}
+
 	ruling_party = communism
 	last_election = "1935.11.14"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = no	
 }
-
-set_popularities = {
-	democratic = 5
-	fascism = 18
-	communism = 67
-	neutrality = 10
-}
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = NKO
-		autonomous_state = autonomy_puppet
-	}
-	else = {
-		puppet = NKO
-		NKO = {
-
-			set_politics = {
-				ruling_party = communism
-				last_election = "1936.1.1"
-				election_frequency = 48
-				elections_allowed = no
-			}
-
-			set_popularities = {
-				democratic = 0
-				fascism = 0
-				communism = 100
-				neutrality = 0
-			}
-		}
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = SKO
-		autonomous_state = autonomy_puppet
-	}
-	else = {
-		puppet = SKO
-	}
+add_ideas = {
+		ARS_lackluster_postwar_recruitment
+		ARS_arstotzkan_general_staff
+		ARS_inglorious_arstotzka
 }
 
 create_country_leader = {
@@ -148,26 +123,26 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Vonel"
-	portrait_path = "gfx\\leaders\\ARS\\ARS1.tga"
+	portrait_path = "gfx\leaders\ARS\ARS1.tga"
 	skill = 3
 }
 
 create_corps_commander = {
 	name = "Dimitri"
-	portrait_path = "gfx\\leaders\\ARS\\ARS3.tga"
+	portrait_path = "gfx\leaders\ARS\ARS3.tga"
 	skill = 3
 }
 
 
 create_corps_commander = {
 	name = "Sergiu Volda"
-	portrait_path = "gfx\\leaders\\ARS\\ARS4.tga"
+	portrait_path = "gfx\leaders\ARS\ARS4.tga"
 	skill = 3
 }
 
 create_corps_commander = {
 	name = "Calensk"
-	portrait_path = "gfx\\leaders\\ARS\\ARS2.tga"
+	portrait_path = "gfx\leaders\ARS\ARS2.tga"
 	traits = { old_guard }
 	skill = 3
 }
