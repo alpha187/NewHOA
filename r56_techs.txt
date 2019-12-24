@@ -1,0 +1,41 @@
+###------> ARS <><> <><> <><> <><> <><>
+
+	Police_Commandos = {
+		
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		
+		military_police = {
+			breakthrough = 1.0
+			soft_attack = 0.5
+			hard_attack = 0.5
+			ap_attack = 1.0
+			initiative = 0.25
+			supply_consumption = 0.15
+			max_organisation = 25.0
+			recon = 1
+		}
+	}
+	Arstotzkan_State_Guard = {
+	
+		research_cost = 1
+		
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+		???? = {
+					minimum_training_level = -0.1
+					army = {
+						combat_width = -0.2
+					}
+					category_support_battalions = {
+						max_organisation = 10
+					}
+		}
+	}
