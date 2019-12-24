@@ -20,3 +20,22 @@
 			recon = 1
 		}
 	}
+	Arstotzkan_State_Guard = {
+	
+		research_cost = 1
+		
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+		???? = {
+					minimum_training_level = -0.1
+					army = {
+						combat_width = -0.2
+					}
+					category_support_battalions = {
+						max_organisation = 10
+					}
+		}
+	}
