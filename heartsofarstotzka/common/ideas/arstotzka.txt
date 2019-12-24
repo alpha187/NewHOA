@@ -1899,6 +1899,53 @@ ideas = {
 					MONTHLY_POPULATION = 0.05
 				}
 			}
+			ARS_immigrant_politics = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = officers_purged
+				
+				modifier = {
+					fascism_drift = 0.05
+					democratic_drift = 0.05
+					neutrality_drift = 0.05
+				}
+			}
+			ARS_arstotzkan_own_way = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_reserve_divisions
+				
+				research_bonus = {
+					land_doctrine = 0.5
+					air_doctrine = 0.5
+					naval_doctrine = 0.5
+				}
+			}
+			ARS_dockyard_escalation = {
+			
+				allowed = {
+					always = yes
+				}
+				
+				removal_cost = -1
+				
+				picture = generic_navy_bonus
+				
+				modifier = {
+					production_speed_dockyard_factor = 0.25
+					industrial_capacity_dockyard = 0.25
+				}
+			}
 	}
 			political_advisor = {
 
