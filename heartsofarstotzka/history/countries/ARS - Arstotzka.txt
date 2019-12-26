@@ -111,16 +111,24 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Vonel"
 	portrait_path = "gfx\leaders\ARS\ARS1.tga"
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Dimitri"
 	portrait_path = "gfx\leaders\ARS\ARS3.tga"
 	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 
@@ -128,6 +136,10 @@ create_corps_commander = {
 	name = "Sergiu Volda"
 	portrait_path = "gfx\leaders\ARS\ARS4.tga"
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -135,4 +147,8 @@ create_corps_commander = {
 	portrait_path = "gfx\leaders\ARS\ARS2.tga"
 	traits = { old_guard }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
 }

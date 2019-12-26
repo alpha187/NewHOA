@@ -101,27 +101,43 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Pytor"
 	portrait_path = "gfx\\leaders\\KOL\\Kol1.tga"
 	skill = 4
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Feliks Popov"
 	portrait_path = "gfx\\leaders\\KOL\\Kol2.tga"
 	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Boris Pavlov"
 	portrait_path = "gfx\\leaders\\KOL\\Kol3.tga"
 	skill = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Yuri Letlev"
 	portrait_path = "gfx\\leaders\\KOL\\Kol4.tga"
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
 }
 
