@@ -1,4 +1,4 @@
-ARS_KolechiaPuppets = {
+﻿ARS_KolechiaPuppets = {
 	ARS_North_Kolechia = {
 
 		icon = ger_reichskommissariats
@@ -178,7 +178,7 @@ ARS_KolechiaPuppets = {
 					#	#}
 					#}
 				}
-				set_autonomy = { target = NKO autonomy_state = autonomy_puppet }
+				set_autonomy = { target = SKO autonomy_state = autonomy_puppet }
 			}
 		}
 	}
