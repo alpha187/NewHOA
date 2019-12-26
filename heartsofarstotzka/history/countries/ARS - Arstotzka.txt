@@ -46,29 +46,19 @@ set_technology = {
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 5
-		}
-
-		fascism = {
-			popularity = 18
-		}
-		
-		communism = {
-			popularity = 67
-		}
-
-		neutrality = {
-			popularity = 10
-		}
-	}
-
 	ruling_party = communism
 	last_election = "1935.11.14"
 	election_frequency = 48
-	elections_allowed = no	
+	elections_allowed = no
+
 }
+
+set_popularities = {
+	democratic = 10
+	fascism = 22
+	communism = 68
+}
+
 add_ideas = {
 		ARS_lackluster_postwar_recruitment
 		ARS_arstotzkan_general_staff
@@ -88,7 +78,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Pravitel Narkom"
-	desc = ""
+	desc = "Pravitel Narkom as he now goes by was an Arstotzkan nationalist and revolutionary who led a rebellion against the Russian Empire in the 1917 revolution. Now he rules with an iron fist over Arstotzka, constantly accusing his citizens of treason with his increasing paranoia of the Kolechians and reactionaries. Only time will tell if he remains in power and fulfils his ambitions, or if his paranoia will prove true and he meets his fate at the edge of a sword."
 	picture = "Communism.tga"
 	expire = "1953.3.1"
 	ideology = marxism
