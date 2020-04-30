@@ -1,0 +1,1426 @@
+ARS_Arstotzka_Development = {
+
+	ARS_develop_gennistora = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			228 = { is_fully_controlled_by = ARS }
+		}
+		visible = {
+			has_completed_focus = ARS_second_three_years_plan
+			has_full_control_of_state = 228
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			228 = {
+				set_state_category = city
+				}
+		}
+	}
+	ARS_develop_wozenfield = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			227 = { is_fully_controlled_by = ARS }
+		}
+		visible = {
+			has_completed_focus = ARS_second_three_years_plan
+			has_full_control_of_state = 227
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			227 = {
+				set_state_category = large_city
+				}
+		}
+	}
+	ARS_develop_lendiforma = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			218 = { is_fully_controlled_by = ARS }
+		}
+		visible = {
+			has_completed_focus = ARS_second_three_years_plan
+			has_full_control_of_state = 218
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			218 = {
+				set_state_category = large_city
+				}
+		}
+	}
+	ARS_develop_fardesto = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 50
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			245 = { is_fully_controlled_by = ARS }
+		}
+		visible = {
+			has_completed_focus = ARS_second_three_years_plan
+			has_full_control_of_state = 245
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			245 = {
+				set_state_category = town
+				}
+		}
+	}
+	ARS_develop_altan = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 50
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			265 = { is_fully_controlled_by = ARS }
+		}
+		visible = {
+			has_completed_focus = ARS_second_three_years_plan
+			has_full_control_of_state = 265
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			265 = {
+				set_state_category = town
+				}
+		}
+	}
+	ARS_develop_octovalis = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 50
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			260 = { is_fully_controlled_by = ARS }
+		}
+		visible = {
+			has_completed_focus = ARS_second_three_years_plan
+			has_full_control_of_state = 260
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			260 = {
+				set_state_category = large_town
+				}
+		}
+	}
+	ARS_develop_vescillo = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 50
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			257 = { is_fully_controlled_by = ARS }
+		}
+		visible = {
+			has_completed_focus = ARS_second_three_years_plan
+			has_full_control_of_state = 257
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			257 = {
+				set_state_category = town
+				}
+		}
+	}
+	ARS_develop_burnton = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 50
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			258 = { is_fully_controlled_by = ARS }
+		}
+		visible = {
+			has_completed_focus = ARS_second_three_years_plan
+			has_full_control_of_state = 258
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			258 = {
+				set_state_category = large_town
+				}
+		}
+	}
+}
+ARS_Siberian_Development = {
+
+	ARS_build_siberian_economy = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			580 = { is_fully_controlled_by = SIB }
+			579 = { is_fully_controlled_by = SIB }
+			577 = { is_fully_controlled_by = SIB }
+			576 = { is_fully_controlled_by = SIB }
+			516 = { is_fully_controlled_by = SIB }
+			575 = { is_fully_controlled_by = SIB }
+			574 = { is_fully_controlled_by = SIB }
+			562 = { is_fully_controlled_by = SIB }
+			644 = { is_fully_controlled_by = SIB }
+			637 = { is_fully_controlled_by = SIB }
+		}
+		visible = {
+			has_completed_focus = ARS_arstotzkan_siberia
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		complete_effect = {
+				add_timed_idea = {
+						idea = ARS_criminal_deportations
+						days = 35
+				}
+		}
+		remove_effect = {
+
+			set_country_flag = ARS_build_siberian_economy
+			add_ideas = ARS_siberian_exiles
+			add_stability = 0.05
+
+			227 = { add_manpower = -30000 }
+			260 = { add_manpower = -25000 }
+			228 = { add_manpower = -20000 }
+			218 = { add_manpower = -20000 }
+			257 = { add_manpower = -15000 }
+			245 = { add_manpower = -15000 }
+			258 = { add_manpower = -15000 }
+			265 = { add_manpower = -10000 }
+
+			574 = { add_manpower = 15000 }
+			575 = { add_manpower = 15000 }
+			562 = { add_manpower = 15000 }
+			576 = { add_manpower = 15000 }
+			580 = { add_manpower = 15000 }
+			644 = { add_manpower = 15000 }
+			637 = { add_manpower = 15000 }
+			579 = { add_manpower = 15000 }
+			516 = { add_manpower = 15000 }
+			577 = { add_manpower = 15000 }
+
+			580 = {
+				set_state_category = rural
+				}
+			579 = {
+				set_state_category = rural
+				}
+			577 = {
+				set_state_category = rural
+				}
+			576 = {
+				set_state_category = rural
+				}
+			516 = {
+				set_state_category = rural
+				}
+			575 = {
+				set_state_category = rural
+				}
+			574 = {
+				set_state_category = rural
+				}
+			562 = {
+				set_state_category = rural
+				}
+			644 = {
+				set_state_category = rural
+				}
+			637 = {
+				set_state_category = rural
+				}
+					SIB = {
+						add_stability = -0.05
+					}
+		}
+	}
+	ARS_build_siberian_industry = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			has_country_flag = ARS_build_siberian_economy
+			num_of_civilian_factories_available_for_projects > 10
+			580 = { is_fully_controlled_by = SIB }
+			579 = { is_fully_controlled_by = SIB }
+			577 = { is_fully_controlled_by = SIB }
+			576 = { is_fully_controlled_by = SIB }
+			516 = { is_fully_controlled_by = SIB }
+			575 = { is_fully_controlled_by = SIB }
+			574 = { is_fully_controlled_by = SIB }
+			562 = { is_fully_controlled_by = SIB }
+			644 = { is_fully_controlled_by = SIB }
+			637 = { is_fully_controlled_by = SIB }
+		}
+		visible = {
+			has_completed_focus = ARS_arstotzkan_siberia
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			set_country_flag = ARS_build_siberian_industry
+			580 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			579 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			577 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			576 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			516 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			575 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			574 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			562 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			644 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			637 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	ARS_build_siberian_war_machine = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			has_country_flag = ARS_build_siberian_industry
+			num_of_civilian_factories_available_for_projects > 10
+			580 = { is_fully_controlled_by = SIB }
+			579 = { is_fully_controlled_by = SIB }
+			577 = { is_fully_controlled_by = SIB }
+			576 = { is_fully_controlled_by = SIB }
+			516 = { is_fully_controlled_by = SIB }
+			575 = { is_fully_controlled_by = SIB }
+			574 = { is_fully_controlled_by = SIB }
+			562 = { is_fully_controlled_by = SIB }
+			644 = { is_fully_controlled_by = SIB }
+			637 = { is_fully_controlled_by = SIB }
+		}
+		visible = {
+			has_completed_focus = ARS_arstotzkan_siberia
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			set_country_flag = ARS_build_siberian_war_machine
+			580 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			579 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			577 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			576 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			516 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			575 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			574 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			562 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			644 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			637 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	ARS_excavate_siberian_resources = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			has_country_flag = ARS_build_siberian_war_machine
+			num_of_civilian_factories_available_for_projects > 10
+			580 = { is_fully_controlled_by = SIB }
+			579 = { is_fully_controlled_by = SIB }
+			577 = { is_fully_controlled_by = SIB }
+			576 = { is_fully_controlled_by = SIB }
+			516 = { is_fully_controlled_by = SIB }
+			575 = { is_fully_controlled_by = SIB }
+			574 = { is_fully_controlled_by = SIB }
+			562 = { is_fully_controlled_by = SIB }
+			644 = { is_fully_controlled_by = SIB }
+			637 = { is_fully_controlled_by = SIB }
+		}
+		visible = {
+			has_completed_focus = ARS_arstotzkan_siberia
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			set_country_flag = ARS_excavate_siberian_resources
+			580 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			579 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			577 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			576 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			516 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			575 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			574 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			562 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			644 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+			637 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+			}
+		}
+	}
+	ARS_excavate_siberian_resources1 = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			has_country_flag = ARS_excavate_siberian_resources
+			num_of_civilian_factories_available_for_projects > 10
+			580 = { is_fully_controlled_by = SIB }
+			579 = { is_fully_controlled_by = SIB }
+			577 = { is_fully_controlled_by = SIB }
+			576 = { is_fully_controlled_by = SIB }
+			516 = { is_fully_controlled_by = SIB }
+			575 = { is_fully_controlled_by = SIB }
+			574 = { is_fully_controlled_by = SIB }
+			562 = { is_fully_controlled_by = SIB }
+			644 = { is_fully_controlled_by = SIB }
+			637 = { is_fully_controlled_by = SIB }
+		}
+		visible = {
+			has_completed_focus = ARS_arstotzkan_siberia
+			has_country_flag = ARS_excavate_siberian_resources
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			set_country_flag = ARS_excavate_siberian_resources1
+			580 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			579 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			577 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			576 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			516 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			575 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			574 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			562 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			644 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+			637 = {
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+		}
+	}
+	ARS_excavate_siberian_resources2 = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			has_country_flag = ARS_excavate_siberian_resources1
+			num_of_civilian_factories_available_for_projects > 15
+			580 = { is_fully_controlled_by = SIB }
+			579 = { is_fully_controlled_by = SIB }
+			577 = { is_fully_controlled_by = SIB }
+			576 = { is_fully_controlled_by = SIB }
+			516 = { is_fully_controlled_by = SIB }
+			575 = { is_fully_controlled_by = SIB }
+			574 = { is_fully_controlled_by = SIB }
+			562 = { is_fully_controlled_by = SIB }
+			644 = { is_fully_controlled_by = SIB }
+			637 = { is_fully_controlled_by = SIB }
+		}
+		visible = {
+			has_completed_focus = ARS_arstotzkan_siberia
+			has_country_flag = ARS_excavate_siberian_resources1
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 15
+		}
+		remove_effect = {
+			set_country_flag = ARS_excavate_siberian_resources2
+			580 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			579 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			577 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			576 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			516 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			575 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			574 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			562 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			644 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+			637 = {
+				add_resource = {
+					type = chromium
+					amount = 1
+				}
+			}
+		}
+	}
+	ARS_excavate_siberian_resources3 = {
+		
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 90
+		
+		icon = generic_prospect_for_resources
+		available = {
+			has_country_flag = ARS_excavate_siberian_resources2
+			num_of_civilian_factories_available_for_projects > 20
+			580 = { is_fully_controlled_by = SIB }
+			579 = { is_fully_controlled_by = SIB }
+			577 = { is_fully_controlled_by = SIB }
+			576 = { is_fully_controlled_by = SIB }
+			516 = { is_fully_controlled_by = SIB }
+			575 = { is_fully_controlled_by = SIB }
+			574 = { is_fully_controlled_by = SIB }
+			562 = { is_fully_controlled_by = SIB }
+			644 = { is_fully_controlled_by = SIB }
+			637 = { is_fully_controlled_by = SIB }
+		}
+		visible = {
+			has_completed_focus = ARS_arstotzkan_siberia
+			has_country_flag = ARS_excavate_siberian_resources2
+		}
+		fire_only_once = yes
+		
+		modifier = {
+			civilian_factory_use = 20
+		}
+		remove_effect = {
+			set_country_flag = ARS_excavate_siberian_resources3
+			580 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			579 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			577 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			576 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			516 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			575 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			574 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			562 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			644 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+			637 = {
+				add_resource = {
+					type = tungsten
+					amount = 1
+				}
+			}
+		}
+	}
+}
+ARS_Labor_Ministry = {
+
+	ARS_labor_monthly = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		days_remove = 60
+		days_re_enable = 180
+		
+		icon = generic_industry
+		available = {
+			is_puppet = no
+				NOT = {
+					has_idea = ARS_labor_lottery
+				}
+		}
+		visible = {
+			has_completed_focus = ARS_ministry_of_labor
+		}
+		fire_only_once = no
+		
+		modifier = {
+				mobilization_speed = -0.1
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+		}
+	}
+	ARS_dockyard_workers = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 60
+		days_re_enable = 180
+		
+		icon = generic_naval
+		available = {
+			is_puppet = no
+				NOT = {
+					has_idea = ARS_dockyard_escalation
+				}
+		}
+		visible = {
+			has_completed_focus = ARS_naval_expansion_directive
+		}
+		fire_only_once = no
+		
+		modifier = {
+				industrial_capacity_factory = -0.25
+				MONTHLY_POPULATION = -0.1
+				production_speed_dockyard_factor = 0.25
+				industrial_capacity_dockyard = 0.25
+		}
+	}
+}
+ARS_Truths_Half_Truths_Lies = {
+
+	ARS_dirty_work = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		days_remove = 180
+		
+		icon = generic_operation
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_rebuild_the_state_guard
+		}
+		fire_only_once = yes
+
+		modifier = {
+			MONTHLY_POPULATION = -0.1
+		}
+		
+		remove_effect = {
+			add_stability = 0.05
+		}
+	}
+	ARS_sweaty_work = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		days_remove = 180
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_rebuild_the_state_guard
+		}
+		fire_only_once = yes
+
+		modifier = {
+			attrition = 0.1
+		}
+		
+		remove_effect = {
+			add_war_support = 0.05
+		}
+	}
+	ARS_comrade_bar_drinks = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 25
+		days_remove = 180
+		
+		icon = generic_civil_support
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_red_army_inspiration
+		}
+		fire_only_once = yes
+
+		modifier = {
+			MONTHLY_POPULATION = -0.25
+			mobilization_speed = -0.25
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+			production_speed_buildings_factor = -0.1
+			consumer_goods_factor = -0.05
+			attrition = 0.1
+		}
+		
+		remove_effect = {
+			add_stability = 0.02
+		}
+	}
+	ARS_edited_news = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 60
+		days_re_enable = 180
+		
+		icon = generic_civil_support
+		available = {
+			is_puppet = no
+				NOT = {
+					has_idea = ARS_patriotic_sacrifice
+				}
+		}
+		visible = {
+			has_completed_focus = ARS_the_truth_of_arstotzka
+		}
+		fire_only_once = no
+		
+		modifier = {
+			mobilization_speed = -0.1
+			stability_weekly = 0.002
+		}
+	}
+	ARS_propaganda_broadcasts = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		days_remove = 60
+		days_re_enable = 180
+		
+		icon = generic_army_support
+		available = {
+			is_puppet = no
+				NOT = {
+					has_idea = ARS_patriotic_sacrifice
+				}
+		}
+		visible = {
+			has_completed_focus = ARS_the_truth_of_arstotzka
+		}
+		fire_only_once = no
+		
+		modifier = {
+			industrial_capacity_factory = -0.05
+			consumer_goods_factor = 0.03
+			war_support_weekly = 0.002
+		}
+	}
+}
+ARS_Diplomatic_Errors = {
+
+	ARS_impor_blocking = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 50
+		days_remove = 30
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = ARS_impor_blocking
+				IMP = {
+					add_timed_idea = {
+							idea = IMP_faction_blocking
+							days = 30
+					}
+				}
+		}
+	}
+	ARS_republia_blocking = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		days_remove = 60
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = ARS_republia_blocking
+				REP = {
+					add_timed_idea = {
+							idea = REP_faction_blocking
+							days = 60
+					}
+				}
+		}
+	}
+	ARS_antegria_blocking = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		days_remove = 60
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = ARS_antegria_blocking
+				ANT = {
+					add_timed_idea = {
+							idea = ANT_faction_blocking
+							days = 60
+					}
+				}
+		}
+	}
+	ARS_obristan_blocking = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		days_remove = 90
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = ARS_obristan_blocking
+				OBR = {
+					add_timed_idea = {
+							idea = OBR_faction_blocking
+							days = 90
+					}
+				}
+		}
+	}
+	ARS_united_federation_blocking = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		days_remove = 90
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = ARS_united_federation_blocking
+				UNF = {
+					add_timed_idea = {
+							idea = UNF_faction_blocking
+							days = 30
+					}
+				}
+		}
+	}
+	ARS_impor_warfare = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 50
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+			has_country_flag = ARS_impor_blocking
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			declare_war_on = {
+				target = IMP
+				type = take_state_focus
+			}
+		}
+	}
+	ARS_republia_warfare = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+			has_country_flag = ARS_republia_blocking
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			declare_war_on = {
+				target = REP
+				type = take_state_focus
+			}
+		}
+	}
+	ARS_antegria_warfare = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 75
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+			has_country_flag = ARS_antegria_blocking
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			declare_war_on = {
+				target = ANT
+				type = take_state_focus
+			}
+		}
+	}
+	ARS_obristan_warfare = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+			has_country_flag = ARS_obristan_blocking
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			declare_war_on = {
+				target = OBR
+				type = take_state_focus
+			}
+		}
+	}
+	ARS_united_federation_warfare = {
+	
+		allowed = {
+			original_tag = ARS
+		}
+		
+		cost = 100
+		
+		icon = eng_propaganda_campaigns
+		available = {
+			is_puppet = no
+		}
+		visible = {
+			has_completed_focus = ARS_glorious_liberation
+			has_country_flag = ARS_united_federation_blocking
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			declare_war_on = {
+				target = UNF
+				type = take_state_focus
+			}
+		}
+	}
+}

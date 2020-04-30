@@ -1,0 +1,54 @@
+#################
+#### ARSTOTZKA ####
+#################
+
+ARS_Arstotzka_Development = {
+
+	allowed = {
+		original_tag = ARS
+	}
+
+	visible = {
+		country_exists = ARS
+	}
+}
+ARS_Siberian_Development = {
+
+	allowed = {
+		original_tag = ARS
+	}
+
+	visible = {
+		country_exists = ARS
+	}
+}
+ARS_Labor_Ministry = {
+
+	allowed = {
+		original_tag = ARS
+	}
+	
+	visible = {
+		country_exists = ARS
+	}
+}
+ARS_Truths_Half_Truths_Lies = {
+
+	allowed = {
+		original_tag = ARS
+	}
+	
+	visible = {
+		country_exists = ARS
+	}
+}
+ARS_Diplomatic_Errors = {
+
+	allowed = {
+		original_tag = ARS
+	}
+	
+	visible = {
+		country_exists = ARS
+	}
+}
